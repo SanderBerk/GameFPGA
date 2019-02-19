@@ -1,4 +1,5 @@
-Src/ssd1306.o: ../Src/ssd1306.c ../Src/ssd1306.h \
+Src/ssd1306.o: ../Src/ssd1306.c \
+ C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/ssd1306.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/stm32f0xx_hal_conf.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/main.h \
@@ -27,9 +28,9 @@ Src/ssd1306.o: ../Src/ssd1306.c ../Src/ssd1306.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
- ../Src/fonts.h
+ C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/fonts.h
 
-../Src/ssd1306.h:
+C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/ssd1306.h:
 
 C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
 
@@ -87,4 +88,4 @@ C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc
 
 C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h:
 
-../Src/fonts.h:
+C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/fonts.h:

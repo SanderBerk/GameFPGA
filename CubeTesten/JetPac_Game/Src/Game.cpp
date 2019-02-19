@@ -15,8 +15,10 @@ Game::~Game()
 {
 }
 
-void Game::setResolution(int, int)
+void Game::setResolution(int x, int y)
 {
+	this->resolution_X = x;
+	this->resolution_Y = y;
 }
 
 void Game::ChangeState(AvailableStates)
@@ -24,23 +26,25 @@ void Game::ChangeState(AvailableStates)
 }
 
 
-int Game::getSprite_X(int)
+Sprite Game::getSprite(int i)
 {
-	return 0;
+	return Sprites_Array[i];
 }
 
-int Game::getSpriteY(int)
+void Game::addSprite(Sprite a)
 {
-	return 0;
+	Sprites_Array[SpriteArraySize++] = a;
 }
 
-char * Game::getHighScore(int)
+Highscore Game::getHighScore(int i)
 {
-	return nullptr;
+	return this->Highscores[i];
 }
 
-void Game::SetHighScore(int, char, char, char)
+void Game::SetHighScore(Highscore h)
 {
+
+	this->Highscores[5] = h;
 }
 
 

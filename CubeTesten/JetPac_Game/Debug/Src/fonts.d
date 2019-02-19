@@ -1,4 +1,5 @@
-Src/fonts.o: ../Src/fonts.c ../Src/fonts.h \
+Src/fonts.o: ../Src/fonts.c \
+ C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/fonts.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/stm32f0xx_hal_conf.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/main.h \
@@ -28,7 +29,7 @@ Src/fonts.o: ../Src/fonts.c ../Src/fonts.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
  C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 
-../Src/fonts.h:
+C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Inc/fonts.h:
 
 C:/Users/Rinke.RINKE-LENOVO/Desktop/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h:
 

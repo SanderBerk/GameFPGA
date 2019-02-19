@@ -54,11 +54,6 @@
 
 /* USER CODE BEGIN Includes */
 #include "tasks.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include "string.h"
-#include "ssd1306.h"
-#include "fonts.h"
 
 //#include "CppMain.cpp"
 
@@ -116,7 +111,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  ssd1306_Init();
+
   //init();
   /* USER CODE END Init */
 

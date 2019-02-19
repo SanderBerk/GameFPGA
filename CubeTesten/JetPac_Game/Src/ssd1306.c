@@ -180,7 +180,7 @@ Params:
 - Font: font selection Font_7x10/Font_11x18/Font_16x26
 - color: Black/White
 */
-char ssd1306_WriteString(char* str, FontDef Font, SSD1306_COLOR color)
+char ssd1306_WriteString(const char* str, const FontDef Font, const SSD1306_COLOR color)
 {
 
 	while (*str) 
