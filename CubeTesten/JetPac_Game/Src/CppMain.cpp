@@ -18,6 +18,10 @@ void cpptest();
 void init();
 void cppmaintask_1(void *pvParameters);
 void cppmaintask_2(void *pvParameters);
+void Settings();
+void Mainscreen();
+void Highscores();
+void Playing();
 
 void cpptest()
 {
@@ -30,7 +34,9 @@ void cpptest()
 
 void init()
 {
-
+	ssd1306_Init();
+	init();
+	cpptest();
 	MainGame.setResolution(640,420);
 	Addsprites();
 
@@ -38,11 +44,30 @@ void init()
 
 void cppmaintask_1(void *pvParameters)
 {
-	ssd1306_Init();
-	init();
+
+	MainGame.GameState = MainGame.INIT;
 	for(;;)
 	{
-		cpptest();
+		switch (MainGame.GameState) {
+			case MainGame.INIT:
+				init();
+				MainGame.GameState = MainGame.MAINSCREEN;
+				break;
+			case MainGame.MAINSCREEN:
+				Mainscreen();
+				break;
+			case MainGame.SETTINGS:
+				Settings();
+				break;
+			case MainGame.HIGHSCORES:
+				Highscores();
+				break;
+			case MainGame.PLAYING:
+				Playing();
+				break;
+			default:
+				break;
+		}
 
 	}
 
@@ -58,6 +83,23 @@ void cppmaintask_2(void *pvParameters)
 }
 
 void Addsprites()
+{
+
+}
+
+void Settings()
+{
+
+}
+void Mainscreen()
+{
+
+}
+void Highscores()
+{
+
+}
+void Playing()
 {
 
 }

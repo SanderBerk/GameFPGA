@@ -21,7 +21,7 @@ void Game::setResolution(int x, int y)
 	this->resolution_Y = y;
 }
 
-void Game::ChangeState(AvailableStates)
+void Game::ChangeState(States)
 {
 }
 
