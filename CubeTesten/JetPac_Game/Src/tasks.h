@@ -15,6 +15,9 @@ extern "C"
 void cppmaintask_1(void *pvParameters);
 void cppmaintask_2(void *pvParameters);
 void init();
+void setB1();
+void setB2();
+void setB3();
 
 
 

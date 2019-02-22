@@ -47,7 +47,6 @@
   ******************************************************************************
   */
 /* Includes ------------------------------------------------------------------*/
-
 #include "main.h"
 #include "stm32f0xx_hal.h"
 #include "cmsis_os.h"
@@ -85,6 +84,7 @@ static void MX_TIM6_Init(void);
 static void MX_TIM14_Init(void);
 static void MX_I2C1_Init(void);
 void StartDefaultTask(void const * argument);
+
 /* USER CODE BEGIN PFP */
 /* Private function prototypes -----------------------------------------------*/
 
@@ -147,16 +147,13 @@ int main(void)
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-
-  //osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
- // defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
-
-  	osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
-    defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   //osThreadDef(cpptask_1, Startcpptask_1, osPriorityNormal, 0, 128);
   xTaskCreate(cppmaintask_1,(char *)"CppMain",configMINIMAL_STACK_SIZE,NULL,3,NULL);
+  xTaskCreate(cppmaintask_2,(char *)"CppMain",configMINIMAL_STACK_SIZE,NULL,3,NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
@@ -353,14 +350,25 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB3 PB4 */
-  GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4;
+  /*Configure GPIO pins : PB3 PB4 PB5 */
+  GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
+/* USER CODE BEGIN 4 */
+//void HAL_GPIO_EXTI_Callback (uint16_t GPIO_Pin)
+//{
+//	if(GPIO_Pin ==  Left_Pin)
+//	{
+//		setB1();
+//	}
+//}
+/* USER CODE END 4 */
+
+/* StartDefaultTask function */
 void StartDefaultTask(void const * argument)
 {
 
@@ -369,8 +377,9 @@ void StartDefaultTask(void const * argument)
   {
 	  osDelay(1);
   }
-  /* USER CODE END 5 */
+  /* USER CODE END 5 */ 
 }
+
 /**
   * @brief  Period elapsed callback in non blocking mode
   * @note   This function is called  when TIM1 interrupt took place, inside
