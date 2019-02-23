@@ -18,10 +18,13 @@ public:
 	~Object();
 	void changeLposX(int);
 	void changeLposY(int);
+	int getLposX();
+	int getLposY();
 	Sprite WhatSpriteareyou();
-
+	int objnr = 0;
 
 private:
+
 	Sprite sprite;
 	int LposX = 0;
 	int LposY = 0;

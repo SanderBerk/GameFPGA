@@ -26,6 +26,7 @@
 "Src/CppMain.o"
 "Src/Game.o"
 "Src/Highscore.o"
+"Src/Object.o"
 "Src/Sprite.o"
 "Src/fonts.o"
 "Src/freertos.o"
