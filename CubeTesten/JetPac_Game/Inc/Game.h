@@ -1,5 +1,6 @@
 #include "Highscore.h"
 #include "Sprite.h"
+#include "Object.h"
 
 #ifndef Game_H_
 #define Game_H_
@@ -9,26 +10,29 @@
 class Game
 {
 public:
-	Game();
+	Game(uint16_t,uint16_t);
 	virtual ~Game();
-
-	void setResolution(int, int);
-	Sprite getSprite(int);
-	void addSprite(Sprite);
+	Sprite getSprite(uint8_t);
 	Highscore getHighScore(int);
 	void SetHighScore(Highscore);
 	enum States { INIT, MAINSCREEN, HIGHSCORES, SETTINGS ,PLAYING };
 	States GameState;
-	void ChangeState(States);
+	void RemObj(uint8_t spritenr);
+	void setObj(Object);
+
+	Object CurrentObjects[20];
+	uint8_t amountCurrentObjects = 0;
+	bool ObjActive[20];
 private:
-	int resolution_X;
-	int resolution_Y;
-	int SpriteArraySize = 0;
-	int HighScoreArraySize = 0;
+
+
+
+	uint16_t resolution_X;
+	uint16_t resolution_Y;
+	uint8_t HighScoreArraySize = 0;
 
 	Highscore Highscores[10];
-	Sprite Sprites_Array[50];
-
+	const Sprite Sprites_Array[6] = {Sprite(17,18,1),Sprite(29,30,2),Sprite(18,19,3),Sprite(18,19,4),Sprite(40,10,5),Sprite(0,0,6)};
 };
 
 

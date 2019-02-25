@@ -12,14 +12,13 @@ Object::Object()
 {
 }
 
-Object::Object(int x, int y, Sprite j)
+Object::Object(uint16_t xpos, uint16_t ypos,uint8_t spritenr,uint8_t Xlen,uint8_t Ylen)
 {
-	this->LposX = x;
-	this->LposY = y;
-	this->sprite = j;
-	this->Radius = (j.getSize_X() + j.getSize_Y()) / 4;
-	this->Middle_X = x + (j.getSize_X() /2);
-	this->Middle_Y = y + (j.getSize_Y() / 2);
+	this->LposX = xpos;
+	this->LposY = ypos;
+	this->Radius = Xlen + Ylen / 4;
+	this->Middle_X = (xpos + Xlen) /2;
+	this->Middle_Y = (ypos + Ylen) / 2;
 }
 
 
@@ -27,27 +26,27 @@ Object::~Object()
 {
 }
 
-void Object::changeLposX(int x)
+void Object::changeLposX(uint16_t x)
 {
 	this->LposX = x;
 }
 
-void Object::changeLposY(int y)
+void Object::changeLposY(uint16_t y)
 {
 	this->LposY = y;
 }
 
-int Object::getLposY()
+uint16_t Object::getLposY()
 {
 	return this->LposY;
 }
 
-int Object::getLposX()
+uint16_t Object::getLposX()
 {
 	return this->LposX;
 }
 
-Sprite Object::WhatSpriteareyou()
+uint8_t Object::getSpritenr()
 {
-	return this->sprite;
+	return this->spritenr;
 }

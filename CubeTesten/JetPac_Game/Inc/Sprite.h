@@ -5,6 +5,8 @@
  *      Author: Rinke
  */
 
+#include <stdint.h>
+
 #ifndef SPRITE_H_
 #define SPRITE_H_
 
@@ -12,16 +14,16 @@ class Sprite
 {
 public:
 	Sprite();
-	Sprite(int,int,int);
+	Sprite(uint8_t,uint8_t,uint8_t);
 	virtual ~Sprite();
-	int getSpriteNr();
-	int getSize_X();
-	int getSize_Y();
+	uint8_t getSpriteNr();
+	uint8_t getSize_X();
+	uint8_t getSize_Y();
 
 private:
-	int	spriteNr;
-	int spriteSizeX;
-	int spriteSizeY;
+	uint8_t	spriteNr;
+	uint8_t spriteSizeX;
+	uint8_t spriteSizeY;
 
 };
 

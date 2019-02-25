@@ -6,8 +6,11 @@ extern "C"
 #endif
 
 
-Game::Game()
+Game::Game(uint16_t x, uint16_t y)
 {
+	this->resolution_X = x;
+	this->resolution_Y = y;
+
 }
 
 
@@ -15,25 +18,10 @@ Game::~Game()
 {
 }
 
-void Game::setResolution(int x, int y)
-{
-	this->resolution_X = x;
-	this->resolution_Y = y;
-}
 
-void Game::ChangeState(States)
-{
-}
-
-
-Sprite Game::getSprite(int i)
+Sprite Game::getSprite(uint8_t i)
 {
 	return Sprites_Array[i];
-}
-
-void Game::addSprite(Sprite a)
-{
-	Sprites_Array[SpriteArraySize++] = a;
 }
 
 Highscore Game::getHighScore(int i)
@@ -45,6 +33,25 @@ void Game::SetHighScore(Highscore h)
 {
 
 	this->Highscores[5] = h;
+}
+
+void Game::setObj(Object obj)
+{
+	ObjActive[amountCurrentObjects] = true;
+	CurrentObjects[amountCurrentObjects++] = obj;
+
+}
+
+
+void Game::RemObj(uint8_t spritenr)
+{
+	for(int i =0;i<amountCurrentObjects;i++)
+	{
+		if(CurrentObjects[i].getSpritenr() == spritenr)
+		{
+			ObjActive[i] = false;
+		}
+	}
 }
 
 

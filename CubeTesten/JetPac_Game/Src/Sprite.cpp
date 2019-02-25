@@ -16,7 +16,7 @@ Sprite::Sprite()
 {
 }
 
-Sprite::Sprite(int x, int y, int id)
+Sprite::Sprite(uint8_t x, uint8_t y, uint8_t id)
 {
 	this->spriteSizeX = x;
 	this->spriteSizeY = y;
@@ -28,17 +28,17 @@ Sprite::~Sprite()
 {
 }
 
-int Sprite::getSpriteNr()
+uint8_t Sprite::getSpriteNr()
 {
 	return this->spriteNr;
 }
 
-int Sprite::getSize_X()
+uint8_t Sprite::getSize_X()
 {
 	return this->spriteSizeX;
 }
 
-int Sprite::getSize_Y()
+uint8_t Sprite::getSize_Y()
 {
 	return this->spriteSizeY;
 }

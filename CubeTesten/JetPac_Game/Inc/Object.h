@@ -6,6 +6,7 @@
  */
 
 #include "Sprite.h"
+#include <stdint.h>
 
 #ifndef OBJECT_H_
 #define OBJECT_H_
@@ -14,24 +15,23 @@ class Object
 {
 public:
 	Object();
-	Object(int,int,Sprite);
+	Object(uint16_t xpos, uint16_t ypos,uint8_t spritenr,uint8_t Xlen,uint8_t Ylen);
 	~Object();
-	void changeLposX(int);
-	void changeLposY(int);
-	int getLposX();
-	int getLposY();
-	Sprite WhatSpriteareyou();
-	int objnr = 0;
+	void changeLposX(uint16_t);
+	void changeLposY(uint16_t);
+	uint16_t getLposX();
+	uint16_t getLposY();
+	uint8_t getSpritenr();
 
 private:
-
-	Sprite sprite;
-	int LposX = 0;
-	int LposY = 0;
-	int Radius = 0;
-	int Middle_X = 0;
-	int Middle_Y = 0;
-
+	uint8_t spritenr = 0;
+	uint8_t X = 0;//X length
+	uint8_t Y = 0;//Y length
+	uint16_t LposX = 0;
+	uint16_t LposY = 0;
+	uint8_t Radius = 0;
+	uint16_t Middle_X = 0;
+	uint16_t Middle_Y = 0;
 };
 
 
