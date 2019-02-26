@@ -19,8 +19,9 @@ public:
 	States GameState;
 	void RemObj(uint8_t spritenr);
 	void setObj(Object);
+	void ChangePosObjbyspritenr(uint8_t spritenr, uint16_t x, uint16_t y);
 
-	Object CurrentObjects[20];
+	Object CurrentObjects[30];
 	uint8_t amountCurrentObjects = 0;
 	bool ObjActive[20];
 private:

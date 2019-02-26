@@ -42,6 +42,22 @@ void Game::setObj(Object obj)
 
 }
 
+void Game::ChangePosObjbyspritenr(uint8_t spritenr, uint16_t x, uint16_t y)
+{
+	for(int i = 0;i<amountCurrentObjects;i++)
+	{
+		if(CurrentObjects[i].spritenr == spritenr)
+		{
+			CurrentObjects[i].LposX = x;
+			CurrentObjects[i].LposY = y;
+			return;
+		}
+
+	}
+
+
+}
+
 
 void Game::RemObj(uint8_t spritenr)
 {

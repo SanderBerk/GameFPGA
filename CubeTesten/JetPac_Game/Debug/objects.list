@@ -24,6 +24,7 @@
 "Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o"
 "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
 "Src/CppMain.o"
+"Src/ExtraFunctions.o"
 "Src/Game.o"
 "Src/Highscore.o"
 "Src/Object.o"

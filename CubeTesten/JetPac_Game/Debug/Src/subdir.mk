@@ -15,6 +15,7 @@ C_SRCS += \
 
 CPP_SRCS += \
 ../Src/CppMain.cpp \
+../Src/ExtraFunctions.cpp \
 ../Src/Game.cpp \
 ../Src/Highscore.cpp \
 ../Src/Object.cpp \
@@ -22,6 +23,7 @@ CPP_SRCS += \
 
 OBJS += \
 ./Src/CppMain.o \
+./Src/ExtraFunctions.o \
 ./Src/Game.o \
 ./Src/Highscore.o \
 ./Src/Object.o \
@@ -47,6 +49,7 @@ C_DEPS += \
 
 CPP_DEPS += \
 ./Src/CppMain.d \
+./Src/ExtraFunctions.d \
 ./Src/Game.d \
 ./Src/Highscore.d \
 ./Src/Object.d \
