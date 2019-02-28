@@ -20,8 +20,8 @@
 #include <stdint.h>
 
 void cpptest();
-void init();
 int getSpriteNrByString(char j);
 void ManualCheck();
+void Init();
 
 #endif /* EXTRAFUNCTIONS_H_ */

@@ -55,7 +55,7 @@ int getSpriteNrByString(char j)
 		return -1;
 }
 
-void init()
+void Init()
 {
 
 }

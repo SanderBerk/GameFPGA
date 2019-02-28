@@ -46,10 +46,10 @@ void Game::ChangePosObjbyspritenr(uint8_t spritenr, uint16_t x, uint16_t y)
 {
 	for(int i = 0;i<amountCurrentObjects;i++)
 	{
-		if(CurrentObjects[i].spritenr == spritenr)
+		if(CurrentObjects[i].getSpritenr() == spritenr)
 		{
-			CurrentObjects[i].LposX = x;
-			CurrentObjects[i].LposY = y;
+			CurrentObjects[i].changeLposX(x);
+			CurrentObjects[i].changeLposY(y);
 			return;
 		}
 

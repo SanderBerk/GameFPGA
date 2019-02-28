@@ -45,13 +45,12 @@ void drawssd1306();
 void cppmaintask_1(void *pvParameters)
 {
 	ssd1306_Init();
-	init();
 	MainGame.GameState = MainGame.INIT;
 	for(;;)
 	{
 		switch (MainGame.GameState) {
 			case MainGame.INIT:
-				init();
+				Init();
 				MainGame.GameState = MainGame.MAINSCREEN;
 				break;
 			case MainGame.MAINSCREEN:
@@ -160,7 +159,6 @@ void Mainscreen()
 		//draw();
 		ssd1306_UpdateScreen();
 		ssd1306_Fill(Black);
-		//cpptest();
 	    ssd1306_SetCursor(0,0);
 	    ssd1306_WriteString("Play", Font_7x10, White);
 	    ssd1306_SetCursor(0,10);
@@ -204,7 +202,6 @@ void Mainscreen()
 						default:
 							break;
 					}
-
 	}
 }
 void Highscores()
