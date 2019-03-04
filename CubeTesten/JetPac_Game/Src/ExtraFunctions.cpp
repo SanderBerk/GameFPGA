@@ -70,9 +70,9 @@ void ManualCheck()
 void cpptest()
 {
 	ssd1306_UpdateScreen();
-    ssd1306_Fill(Black);
-    ssd1306_SetCursor(20,0);
-    ssd1306_WriteString("test", Font_7x10, White);
+    //ssd1306_Fill(Black);
+    //ssd1306_SetCursor(20,0);
+   // ssd1306_WriteString("test", Font_7x10, White);
 
 	ssd1306_SetCursor(0,0);
 	if(statebutton1 == true) ssd1306_WriteString("1", Font_7x10, White);
@@ -85,6 +85,7 @@ void cpptest()
 	ssd1306_SetCursor(0,20);
 	if(statebutton3 == true) ssd1306_WriteString("1", Font_7x10, White);
 	if(statebutton3 == false) ssd1306_WriteString("0", Font_7x10, White);
+	ManualCheck();
 }
 
 

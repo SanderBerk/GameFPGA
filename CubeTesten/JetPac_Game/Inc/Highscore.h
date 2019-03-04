@@ -22,6 +22,8 @@ public:
 private:
 	int HighscorePlace;
 	std::string Hnaam;
+
+	friend class Game;
 };
 
 

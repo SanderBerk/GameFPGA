@@ -8,17 +8,14 @@
 
 #include "Object.h"
 
-Object::Object()
-{
-}
-
-Object::Object(uint16_t xpos, uint16_t ypos,uint8_t spritenr,uint8_t Xlen,uint8_t Ylen)
+Object::Object(uint16_t xpos, uint16_t ypos, uint8_t nr, uint8_t Xlen, uint8_t Ylen)
 {
 	this->LposX = xpos;
 	this->LposY = ypos;
 	this->Radius = Xlen + Ylen / 4;
-	this->Middle_X = (xpos + Xlen) /2;
-	this->Middle_Y = (ypos + Ylen) / 2;
+	this->Xlength = Xlen;//X length
+	this->Ylength = Ylen;//Y length
+	this->spritenr = nr;
 }
 
 
@@ -49,4 +46,34 @@ uint16_t Object::getLposX()
 uint8_t Object::getSpritenr()
 {
 	return this->spritenr;
+}
+
+uint16_t Object::getMiddleX()
+{
+	return (LposX + Xlength) / 4;
+}
+
+uint16_t Object::getMiddleY()
+{
+	return (LposY + Ylength) / 4;;
+}
+
+void Object::setNext(Object * n)
+{
+	this->Next = n;
+}
+
+Object * Object::getNext()
+{
+	return this->Next;
+}
+
+void Object::setPrev(Object * p)
+{
+	this->Prev = p;
+}
+
+Object * Object::getPrev()
+{
+	return this->Prev;
 }

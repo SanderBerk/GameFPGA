@@ -153,7 +153,7 @@ int main(void)
   /* USER CODE BEGIN RTOS_THREADS */
   //osThreadDef(cpptask_1, Startcpptask_1, osPriorityNormal, 0, 128);
   xTaskCreate(cppmaintask_1,(char *)"CppMain",configMINIMAL_STACK_SIZE,NULL,3,NULL);
-  xTaskCreate(cppmaintask_2,(char *)"CppMain",configMINIMAL_STACK_SIZE,NULL,3,NULL);
+  //xTaskCreate(cppmaintask_2,(char *)"CppMain",configMINIMAL_STACK_SIZE,NULL,3,NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
