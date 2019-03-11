@@ -246,8 +246,70 @@ void Mainscreen()
 void Highscores()
 {
 	int highscores = 1;
+	MainGame.clearObjects();
+
+	Object aO = Object(0,0,getSpriteNrByString('a'),5,5);
+	uint8_t a = MainGame.addObject(&aO);
+
+	Object bO = Object(6,0,getSpriteNrByString('b'),5,5);
+	uint8_t b = MainGame.addObject(&bO);
+
+	Object cO = Object(12,0,getSpriteNrByString('c'),5,5);
+	uint8_t c = MainGame.addObject(&cO);
+
+	Object dO = Object(18,0,getSpriteNrByString('d'),5,5);
+	uint8_t d = MainGame.addObject(&dO);
+
+	Object eO = Object(24,0,getSpriteNrByString('e'),5,5);
+	uint8_t e = MainGame.addObject(&eO);
+
+	Object fO = Object(30,0,getSpriteNrByString('f'),5,5);
+	uint8_t f = MainGame.addObject(&fO);
+
+	Object gO = Object(36,0,getSpriteNrByString('g'),5,5);
+	uint8_t g = MainGame.addObject(&gO);
+
+	Object hO = Object(42,0,getSpriteNrByString('h'),5,5);
+	uint8_t h = MainGame.addObject(&hO);
+
+	Object iO = Object(48,0,getSpriteNrByString('i'),5,5);
+	uint8_t i = MainGame.addObject(&iO);
+
+	Object jO = Object(54,0,getSpriteNrByString('j'),5,5);
+	uint8_t j = MainGame.addObject(&jO);
+
+	Object kO = Object(60,0,getSpriteNrByString('k'),5,5);
+	uint8_t k = MainGame.addObject(&kO);
+
+	Object lO = Object(67,0,getSpriteNrByString('l'),5,5);
+	uint8_t l = MainGame.addObject(&lO);
+
+	Object mO = Object(73,0,getSpriteNrByString('m'),5,5);
+	uint8_t m = MainGame.addObject(&mO);
+
+	Object nO = Object(79,0,getSpriteNrByString('n'),5,5);
+	uint8_t n = MainGame.addObject(&nO);
+
+	Object oO = Object(85,0,getSpriteNrByString('o'),5,5);
+	uint8_t o = MainGame.addObject(&oO);
+
+	Object pO = Object(92,0,getSpriteNrByString('p'),5,5);
+	uint8_t p = MainGame.addObject(&pO);
+
+	Object qO = Object(98,0,getSpriteNrByString('q'),5,5);
+	uint8_t q = MainGame.addObject(&qO);
+
+	Object rO = Object(103,0,getSpriteNrByString('r'),5,5);
+	uint8_t r = MainGame.addObject(&rO);
+
+	ssd1306_Fill(Black);
 	while(highscores == 1)
 	{
+		MainGame.clearssd1306();
+
+
+
+		MainGame.drawssd1306();
 
 	}
 }
@@ -269,18 +331,15 @@ void Playing()
 
 	Object lineobj3 = Object(40,6,1,2,2);
 	int line3 = MainGame.addObject(&lineobj3);
-
+	ssd1306_Fill(Black);
+	int y = 40;
+	int x= 0;
+	int speed = 5;
+	int up = 1;
+	int orginal = 43;
+	x = orginal;
 	while(playing == 1)
 	{
-		ssd1306_Fill(Black);
-		int y = 40;
-		int x= 0;
-		int speed = 5;
-		int up = 1;
-		int orginal = 43;
-		x = orginal;
-		while(1)
-		{
 			ManualCheck();
 		    if((x - orginal) > 18 && up == 1) speed = 4;
 		    if((x - orginal) > 25 && up == 1) speed = 3;
@@ -334,21 +393,20 @@ void Playing()
 			    }
 		    }
 
-
-
-
-
-		    if(statebutton1 == true)
+		    if(statebutton1 == false)
 		    {
 		    	if(y < 120)y++;
 
 		    }
-		    if(statebutton2 == true)
+		    if(statebutton2 == false)
 		    {
 		    	if(y > 0)y--;
 		    }
-
-
+		    if(statebutton3 == false)
+		    {
+		    	MainGame.GameState = MainGame.HIGHSCORES;
+		    	playing = 0;
+		    }
 
 		    MainGame.clearssd1306();
 		    MainGame.ChangePosObjbyUniNr(line,y,0);
@@ -356,7 +414,7 @@ void Playing()
 		    MainGame.drawssd1306();
 
 
-		}
+
 	}
 }
 

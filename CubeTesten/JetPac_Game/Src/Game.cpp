@@ -1,11 +1,14 @@
 #include "Game.h"
 #include "ssd1306.h"
+#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
 
+
+char getCharbySpritenr(int j);
 
 Game::Game(uint16_t x, uint16_t y)
 {
@@ -36,7 +39,7 @@ void Game::SetHighScore(Highscore h)
 	this->Highscores[5] = h;
 }
 
-int Game::addObject(Object * obj)
+uint8_t Game::addObject(Object * obj)
 {
 	if (First == nullptr && Last == nullptr)
 	{
@@ -194,15 +197,25 @@ void Game::drawssd1306()
 	Object * temp = this->First;
 	while (temp != nullptr)
 	{
-		for(int i = 0;i<temp->Xlength;i++)
+
+		if(temp->spritenr > 6)
 		{
-			for(int j = 0;j<temp->Ylength;j++)
-			{
-					ssd1306_DrawPixel(temp->LposX+i, temp->LposY+j, White);
-			}
-
+			uint8_t t = temp->spritenr;
+			char tempa = getCharbySpritenr(t);
+			ssd1306_SetCursor(temp->LposX+temp->Xlength,temp->LposY);
+			ssd1306_WriteChar(tempa, Font_7x10, White);
 		}
+		else
+		{
+			for(int i = 0;i<temp->Xlength;i++)
+			{
+				for(int j = 0;j<temp->Ylength;j++)
+				{
+						ssd1306_DrawPixel(temp->LposX+i, temp->LposY+j, White);
+				}
 
+			}
+		}
 		temp = temp->Next;
 	}
 
@@ -231,6 +244,49 @@ void Game::clearObjects()
 {
 	First = nullptr;
 	Last = nullptr;
+}
+
+
+char getCharbySpritenr(int j)
+{
+	if(j == 7) return '1';
+	if(j == 8) return '2';
+	if(j == 9) return '3';
+	if(j == 10) return '4';
+	if(j == 11) return '5';
+	if(j == 12) return '6';
+	if(j == 13) return '7';
+	if(j == 14) return '8';
+	if(j == 15) return '9';
+	if(j == 16) return '0';
+	if(j == 17) return 'a';
+	if(j == 18) return 'b';
+	if(j == 19) return 'c';
+	if(j == 20) return 'd';
+	if(j == 21) return 'e';
+	if(j == 22) return 'f';
+	if(j == 23) return 'g';
+	if(j == 24) return 'h';
+	if(j == 25) return 'i';
+	if(j == 26) return 'j';
+	if(j == 27) return 'k';
+	if(j == 28) return 'l';
+	if(j == 29) return 'm';
+	if(j == 30) return 'n';
+	if(j == 31) return 'o';
+	if(j == 32) return 'p';
+	if(j == 33) return 'q';
+	if(j == 34) return 'r';
+	if(j == 35) return 's';
+	if(j == 36) return 't';
+	if(j == 37) return 'u';
+	if(j == 38) return 'v';
+	if(j == 39) return 'w';
+	if(j == 40) return 'x';
+	if(j == 41) return 'y';
+	if(j == 42) return 'z';
+	else
+		return -1;
 }
 
 

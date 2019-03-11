@@ -21,6 +21,7 @@
 
 void cpptest();
 int getSpriteNrByString(char j);
+char getCharbySpritenr(uint8_t j);
 void ManualCheck();
 void Init();
 

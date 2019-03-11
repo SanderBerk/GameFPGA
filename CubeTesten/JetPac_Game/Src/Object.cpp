@@ -8,7 +8,7 @@
 
 #include "Object.h"
 
-Object::Object(uint16_t xpos, uint16_t ypos, uint8_t nr, uint8_t Xlen, uint8_t Ylen)
+Object::Object(int xpos, int ypos, int nr, int Xlen, int Ylen)
 {
 	this->LposX = xpos;
 	this->LposY = ypos;
@@ -16,6 +16,7 @@ Object::Object(uint16_t xpos, uint16_t ypos, uint8_t nr, uint8_t Xlen, uint8_t Y
 	this->Xlength = Xlen;//X length
 	this->Ylength = Ylen;//Y length
 	this->spritenr = nr;
+	this->UniqueIDWhenactive = 0;
 }
 
 

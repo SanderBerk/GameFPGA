@@ -18,7 +18,7 @@ public:
 	enum States { INIT, MAINSCREEN, HIGHSCORES, SETTINGS, PLAYING };
 	States GameState;
 	void removeObjectUni(uint8_t UniqueNr);
-	int addObject(Object *);
+	uint8_t addObject(Object * obj);
 	int ChangePosObjbyUniNr(uint8_t uninr, uint16_t x, uint16_t y);
 	//void showall();
 	void clearObjects();

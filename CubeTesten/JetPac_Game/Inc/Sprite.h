@@ -21,9 +21,9 @@ public:
 	uint8_t getSize_Y();
 
 private:
-	uint8_t	spriteNr;
-	uint8_t spriteSizeX;
-	uint8_t spriteSizeY;
+	int	spriteNr : 6;
+	int spriteSizeX : 5;
+	int spriteSizeY : 5;
 
 	friend class Game;
 	friend class Object;

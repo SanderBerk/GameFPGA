@@ -14,7 +14,7 @@
 class Object
 {
 public:
-	Object(uint16_t xpos, uint16_t ypos, uint8_t spritenr, uint8_t Xlen, uint8_t Ylen);
+	Object(int xpos, int ypos, int nr, int Xlen, int Ylen);
 	~Object();
 	void changeLposX(uint16_t);
 	void changeLposY(uint16_t);
@@ -29,15 +29,15 @@ public:
 	Object * getPrev();
 
 private:
-	uint16_t UniqueIDWhenactive = 0;
+	int UniqueIDWhenactive : 6;
 	Object * Next = nullptr;
 	Object * Prev = nullptr;
-	uint16_t spritenr = 0;
-	uint16_t Xlength = 0;//X length
-	uint16_t Ylength = 0;//Y length
-	uint16_t LposX = 0;
-	uint16_t LposY = 0;
-	uint16_t Radius = 0;
+	int spritenr : 7;
+	int Xlength : 5;//X length
+	int Ylength : 5;//Y length
+	int LposX : 10;
+	int LposY : 9;
+	int Radius : 5;
 
 	friend class Game;
 };

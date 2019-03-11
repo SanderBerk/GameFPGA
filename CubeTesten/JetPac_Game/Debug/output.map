@@ -3968,8 +3968,6 @@ Discarded input sections
  .text          0x00000000        0x0 Src/CppMain.o
  .text.cppmaintask_2
                 0x00000000       0xe8 Src/CppMain.o
- .text._Z10Highscoresv
-                0x00000000        0x2 Src/CppMain.o
  .text._Z8Settingsv
                 0x00000000        0x2 Src/CppMain.o
  .text._Z10SendviaSPI6Object
@@ -4346,15 +4344,15 @@ Discarded input sections
  .data          0x00000000        0x0 Src/Game.o
  .bss           0x00000000        0x0 Src/Game.o
  .text._ZN4Game9getSpriteEh
-                0x00000000       0x28 Src/Game.o
+                0x00000000       0x4c Src/Game.o
  .text._ZN4Game12getHighScoreEi
                 0x00000000       0x24 Src/Game.o
  .text._ZN4Game12SetHighScoreE9Highscore
                 0x00000000       0x14 Src/Game.o
  .text._ZN4Game15removeObjectUniEh
-                0x00000000       0x44 Src/Game.o
+                0x00000000       0x48 Src/Game.o
  .text._ZN4Game7getObjYEh
-                0x00000000       0x1c Src/Game.o
+                0x00000000       0x22 Src/Game.o
  .text._ZN4Game4drawEv
                 0x00000000        0x2 Src/Game.o
  .debug_macro   0x00000000      0x982 Src/Game.o
@@ -4606,15 +4604,15 @@ Discarded input sections
  .data          0x00000000        0x0 Src/Object.o
  .bss           0x00000000        0x0 Src/Object.o
  .text._ZN6Object8getLposYEv
-                0x00000000        0x4 Src/Object.o
+                0x00000000        0xa Src/Object.o
  .text._ZN6Object8getLposXEv
-                0x00000000        0x4 Src/Object.o
+                0x00000000        0xa Src/Object.o
  .text._ZN6Object11getSpritenrEv
-                0x00000000        0x4 Src/Object.o
+                0x00000000        0xa Src/Object.o
  .text._ZN6Object10getMiddleXEv
-                0x00000000        0xa Src/Object.o
+                0x00000000       0x1c Src/Object.o
  .text._ZN6Object10getMiddleYEv
-                0x00000000        0xa Src/Object.o
+                0x00000000       0x1c Src/Object.o
  .text._ZN6Object7setNextEPS_
                 0x00000000        0x4 Src/Object.o
  .text._ZN6Object7getNextEv
@@ -4645,11 +4643,11 @@ Discarded input sections
  .text._ZN6SpriteC2Ev
                 0x00000000        0xc Src/Sprite.o
  .text._ZN6Sprite11getSpriteNrEv
-                0x00000000        0x4 Src/Sprite.o
+                0x00000000        0xa Src/Sprite.o
  .text._ZN6Sprite9getSize_XEv
-                0x00000000        0x4 Src/Sprite.o
+                0x00000000        0xa Src/Sprite.o
  .text._ZN6Sprite9getSize_YEv
-                0x00000000        0x4 Src/Sprite.o
+                0x00000000        0xa Src/Sprite.o
  .debug_macro   0x00000000      0x982 Src/Sprite.o
  .debug_macro   0x00000000       0x1c Src/Sprite.o
  .debug_macro   0x00000000       0x22 Src/Sprite.o
@@ -16989,7 +16987,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
                 0x08000000                g_pfnVectors
                 0x080000c0                . = ALIGN (0x4)
 
-.text           0x080000c0     0x377c
+.text           0x080000c0     0x3d60
                 0x080000c0                . = ALIGN (0x4)
  *(.text)
  .text          0x080000c0       0x60 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
@@ -17248,323 +17246,329 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
                 0x08001f98       0x44 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
                 0x08001f98                vPortFree
  .text._Z10Mainscreenv
-                0x08001fdc      0x754 Src/CppMain.o
+                0x08001fdc      0x8e0 Src/CppMain.o
                 0x08001fdc                Mainscreen()
+ .text._Z10Highscoresv
+                0x080028bc      0x248 Src/CppMain.o
+                0x080028bc                Highscores()
  .text._Z7Playingv
-                0x08002730      0x210 Src/CppMain.o
-                0x08002730                Playing()
+                0x08002b04      0x228 Src/CppMain.o
+                0x08002b04                Playing()
  .text.cppmaintask_1
-                0x08002940       0x44 Src/CppMain.o
-                0x08002940                cppmaintask_1
+                0x08002d2c       0x48 Src/CppMain.o
+                0x08002d2c                cppmaintask_1
  .text.startup._GLOBAL__sub_I_MainGame
-                0x08002984       0x2c Src/CppMain.o
+                0x08002d74       0x2c Src/CppMain.o
  .text._Z19getSpriteNrByStringc
-                0x080029b0       0xe2 Src/ExtraFunctions.o
-                0x080029b0                getSpriteNrByString(char)
+                0x08002da0       0xe2 Src/ExtraFunctions.o
+                0x08002da0                getSpriteNrByString(char)
  .text._Z4Initv
-                0x08002a92        0x2 Src/ExtraFunctions.o
-                0x08002a92                Init()
+                0x08002e82        0x2 Src/ExtraFunctions.o
+                0x08002e82                Init()
  .text._Z11ManualCheckv
-                0x08002a94       0x48 Src/ExtraFunctions.o
-                0x08002a94                ManualCheck()
+                0x08002e84       0x48 Src/ExtraFunctions.o
+                0x08002e84                ManualCheck()
  .text._ZN4GameD2Ev
-                0x08002adc       0x44 Src/Game.o
-                0x08002adc                Game::~Game()
-                0x08002adc                Game::~Game()
+                0x08002ecc       0x44 Src/Game.o
+                0x08002ecc                Game::~Game()
+                0x08002ecc                Game::~Game()
  .text._ZN4GameD0Ev
-                0x08002b20       0x16 Src/Game.o
-                0x08002b20                Game::~Game()
- *fill*         0x08002b36        0x2 
+                0x08002f10       0x16 Src/Game.o
+                0x08002f10                Game::~Game()
+ *fill*         0x08002f26        0x2 
  .text._ZN4GameC2Ett
-                0x08002b38       0xac Src/Game.o
-                0x08002b38                Game::Game(unsigned short, unsigned short)
-                0x08002b38                Game::Game(unsigned short, unsigned short)
+                0x08002f28       0xac Src/Game.o
+                0x08002f28                Game::Game(unsigned short, unsigned short)
+                0x08002f28                Game::Game(unsigned short, unsigned short)
  .text._ZN4Game9addObjectEP6Object
-                0x08002be4       0x32 Src/Game.o
-                0x08002be4                Game::addObject(Object*)
+                0x08002fd4       0x52 Src/Game.o
+                0x08002fd4                Game::addObject(Object*)
  .text._ZN4Game19ChangePosObjbyUniNrEhtt
-                0x08002c16       0x30 Src/Game.o
-                0x08002c16                Game::ChangePosObjbyUniNr(unsigned char, unsigned short, unsigned short)
+                0x08003026       0x32 Src/Game.o
+                0x08003026                Game::ChangePosObjbyUniNr(unsigned char, unsigned short, unsigned short)
  .text._ZN4Game7getObjXEh
-                0x08002c46       0x1c Src/Game.o
-                0x08002c46                Game::getObjX(unsigned char)
+                0x08003058       0x22 Src/Game.o
+                0x08003058                Game::getObjX(unsigned char)
  .text._ZN4Game9checkCollEhhhhh
-                0x08002c62       0x22 Src/Game.o
-                0x08002c62                Game::checkColl(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
- .text._ZN4Game11drawssd1306Ev
-                0x08002c84       0x38 Src/Game.o
-                0x08002c84                Game::drawssd1306()
+                0x0800307a       0x22 Src/Game.o
+                0x0800307a                Game::checkColl(unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
  .text._ZN4Game12clearssd1306Ev
-                0x08002cbc       0x3e Src/Game.o
-                0x08002cbc                Game::clearssd1306()
+                0x0800309c       0x4a Src/Game.o
+                0x0800309c                Game::clearssd1306()
  .text._ZN4Game12clearObjectsEv
-                0x08002cfa        0x8 Src/Game.o
-                0x08002cfa                Game::clearObjects()
- *fill*         0x08002d02        0x2 
+                0x080030e6        0x8 Src/Game.o
+                0x080030e6                Game::clearObjects()
+ .text.getCharbySpritenr
+                0x080030ee       0xde Src/Game.o
+                0x080030ee                getCharbySpritenr
+ .text._ZN4Game11drawssd1306Ev
+                0x080031cc       0x7c Src/Game.o
+                0x080031cc                Game::drawssd1306()
  .text._ZN9HighscoreD2Ev
-                0x08002d04       0x18 Src/Highscore.o
-                0x08002d04                Highscore::~Highscore()
-                0x08002d04                Highscore::~Highscore()
+                0x08003248       0x18 Src/Highscore.o
+                0x08003248                Highscore::~Highscore()
+                0x08003248                Highscore::~Highscore()
  .text._ZN9HighscoreD0Ev
-                0x08002d1c       0x14 Src/Highscore.o
-                0x08002d1c                Highscore::~Highscore()
+                0x08003260       0x14 Src/Highscore.o
+                0x08003260                Highscore::~Highscore()
  .text._ZN9HighscoreC2Ev
-                0x08002d30       0x18 Src/Highscore.o
-                0x08002d30                Highscore::Highscore()
-                0x08002d30                Highscore::Highscore()
- .text._ZN6ObjectC2Etthhh
-                0x08002d48       0x26 Src/Object.o
-                0x08002d48                Object::Object(unsigned short, unsigned short, unsigned char, unsigned char, unsigned char)
-                0x08002d48                Object::Object(unsigned short, unsigned short, unsigned char, unsigned char, unsigned char)
+                0x08003274       0x18 Src/Highscore.o
+                0x08003274                Highscore::Highscore()
+                0x08003274                Highscore::Highscore()
+ .text._ZN6ObjectC2Eiiiii
+                0x0800328c       0x84 Src/Object.o
+                0x0800328c                Object::Object(int, int, int, int, int)
+                0x0800328c                Object::Object(int, int, int, int, int)
  .text._ZN6ObjectD2Ev
-                0x08002d6e        0x2 Src/Object.o
-                0x08002d6e                Object::~Object()
-                0x08002d6e                Object::~Object()
+                0x08003310        0x2 Src/Object.o
+                0x08003310                Object::~Object()
+                0x08003310                Object::~Object()
+ *fill*         0x08003312        0x2 
  .text._ZN6Object11changeLposXEt
-                0x08002d70        0x4 Src/Object.o
-                0x08002d70                Object::changeLposX(unsigned short)
+                0x08003314       0x14 Src/Object.o
+                0x08003314                Object::changeLposX(unsigned short)
  .text._ZN6Object11changeLposYEt
-                0x08002d74        0x4 Src/Object.o
-                0x08002d74                Object::changeLposY(unsigned short)
+                0x08003328       0x10 Src/Object.o
+                0x08003328                Object::changeLposY(unsigned short)
  .text._ZN6SpriteD2Ev
-                0x08002d78        0x2 Src/Sprite.o
-                0x08002d78                Sprite::~Sprite()
-                0x08002d78                Sprite::~Sprite()
+                0x08003338        0x2 Src/Sprite.o
+                0x08003338                Sprite::~Sprite()
+                0x08003338                Sprite::~Sprite()
  .text._ZN6SpriteD0Ev
-                0x08002d7a        0xe Src/Sprite.o
-                0x08002d7a                Sprite::~Sprite()
+                0x0800333a        0xe Src/Sprite.o
+                0x0800333a                Sprite::~Sprite()
  .text._ZN6SpriteC2Ehhh
-                0x08002d88       0x14 Src/Sprite.o
-                0x08002d88                Sprite::Sprite(unsigned char, unsigned char, unsigned char)
-                0x08002d88                Sprite::Sprite(unsigned char, unsigned char, unsigned char)
+                0x08003348       0x38 Src/Sprite.o
+                0x08003348                Sprite::Sprite(unsigned char, unsigned char, unsigned char)
+                0x08003348                Sprite::Sprite(unsigned char, unsigned char, unsigned char)
  .text.SystemClock_Config
-                0x08002d9c       0x6e Src/main.o
-                0x08002d9c                SystemClock_Config
- *fill*         0x08002e0a        0x2 
+                0x08003380       0x6e Src/main.o
+                0x08003380                SystemClock_Config
+ *fill*         0x080033ee        0x2 
  .text.startup.main
-                0x08002e0c      0x178 Src/main.o
-                0x08002e0c                main
+                0x080033f0      0x178 Src/main.o
+                0x080033f0                main
  .text.HAL_TIM_PeriodElapsedCallback
-                0x08002f84       0x14 Src/main.o
-                0x08002f84                HAL_TIM_PeriodElapsedCallback
+                0x08003568       0x14 Src/main.o
+                0x08003568                HAL_TIM_PeriodElapsedCallback
  .text.ssd1306_WriteCommand
-                0x08002f98       0x24 Src/ssd1306.o
-                0x08002f98                ssd1306_WriteCommand
+                0x0800357c       0x24 Src/ssd1306.o
+                0x0800357c                ssd1306_WriteCommand
  .text.ssd1306_Fill
-                0x08002fbc       0x1c Src/ssd1306.o
-                0x08002fbc                ssd1306_Fill
+                0x080035a0       0x1c Src/ssd1306.o
+                0x080035a0                ssd1306_Fill
  .text.ssd1306_UpdateScreen
-                0x08002fd8       0x48 Src/ssd1306.o
-                0x08002fd8                ssd1306_UpdateScreen
+                0x080035bc       0x48 Src/ssd1306.o
+                0x080035bc                ssd1306_UpdateScreen
  .text.ssd1306_Init
-                0x08003020       0xa8 Src/ssd1306.o
-                0x08003020                ssd1306_Init
+                0x08003604       0xa8 Src/ssd1306.o
+                0x08003604                ssd1306_Init
  .text.ssd1306_DrawPixel
-                0x080030c8       0x48 Src/ssd1306.o
-                0x080030c8                ssd1306_DrawPixel
+                0x080036ac       0x48 Src/ssd1306.o
+                0x080036ac                ssd1306_DrawPixel
  .text.ssd1306_WriteChar
-                0x08003110       0xac Src/ssd1306.o
-                0x08003110                ssd1306_WriteChar
+                0x080036f4       0xac Src/ssd1306.o
+                0x080036f4                ssd1306_WriteChar
  .text.ssd1306_WriteString
-                0x080031bc       0x28 Src/ssd1306.o
-                0x080031bc                ssd1306_WriteString
+                0x080037a0       0x28 Src/ssd1306.o
+                0x080037a0                ssd1306_WriteString
  .text.ssd1306_SetCursor
-                0x080031e4        0xc Src/ssd1306.o
-                0x080031e4                ssd1306_SetCursor
+                0x080037c8        0xc Src/ssd1306.o
+                0x080037c8                ssd1306_SetCursor
  .text.HAL_MspInit
-                0x080031f0       0x50 Src/stm32f0xx_hal_msp.o
-                0x080031f0                HAL_MspInit
+                0x080037d4       0x50 Src/stm32f0xx_hal_msp.o
+                0x080037d4                HAL_MspInit
  .text.HAL_I2C_MspInit
-                0x08003240       0x4c Src/stm32f0xx_hal_msp.o
-                0x08003240                HAL_I2C_MspInit
+                0x08003824       0x4c Src/stm32f0xx_hal_msp.o
+                0x08003824                HAL_I2C_MspInit
  .text.HAL_SPI_MspInit
-                0x0800328c       0x48 Src/stm32f0xx_hal_msp.o
-                0x0800328c                HAL_SPI_MspInit
+                0x08003870       0x48 Src/stm32f0xx_hal_msp.o
+                0x08003870                HAL_SPI_MspInit
  .text.HAL_TIM_Base_MspInit
-                0x080032d4       0x48 Src/stm32f0xx_hal_msp.o
-                0x080032d4                HAL_TIM_Base_MspInit
+                0x080038b8       0x48 Src/stm32f0xx_hal_msp.o
+                0x080038b8                HAL_TIM_Base_MspInit
  .text.HAL_InitTick
-                0x0800331c       0x7c Src/stm32f0xx_hal_timebase_TIM.o
-                0x0800331c                HAL_InitTick
+                0x08003900       0x7c Src/stm32f0xx_hal_timebase_TIM.o
+                0x08003900                HAL_InitTick
  .text.NMI_Handler
-                0x08003398        0x2 Src/stm32f0xx_it.o
-                0x08003398                NMI_Handler
+                0x0800397c        0x2 Src/stm32f0xx_it.o
+                0x0800397c                NMI_Handler
  .text.HardFault_Handler
-                0x0800339a        0x2 Src/stm32f0xx_it.o
-                0x0800339a                HardFault_Handler
+                0x0800397e        0x2 Src/stm32f0xx_it.o
+                0x0800397e                HardFault_Handler
  .text.SysTick_Handler
-                0x0800339c        0x8 Src/stm32f0xx_it.o
-                0x0800339c                SysTick_Handler
+                0x08003980        0x8 Src/stm32f0xx_it.o
+                0x08003980                SysTick_Handler
  .text.TIM1_BRK_UP_TRG_COM_IRQHandler
-                0x080033a4       0x10 Src/stm32f0xx_it.o
-                0x080033a4                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x08003988       0x10 Src/stm32f0xx_it.o
+                0x08003988                TIM1_BRK_UP_TRG_COM_IRQHandler
  .text.SystemInit
-                0x080033b4       0x60 Src/system_stm32f0xx.o
-                0x080033b4                SystemInit
+                0x08003998       0x60 Src/system_stm32f0xx.o
+                0x08003998                SystemInit
  .text.Reset_Handler
-                0x08003414       0x50 startup/startup_stm32f030x8.o
-                0x08003414                Reset_Handler
+                0x080039f8       0x50 startup/startup_stm32f030x8.o
+                0x080039f8                Reset_Handler
  .text.Default_Handler
-                0x08003464        0x2 startup/startup_stm32f030x8.o
-                0x08003464                DMA1_Channel4_5_IRQHandler
-                0x08003464                ADC1_IRQHandler
-                0x08003464                SPI2_IRQHandler
-                0x08003464                SPI1_IRQHandler
-                0x08003464                TIM17_IRQHandler
-                0x08003464                EXTI4_15_IRQHandler
-                0x08003464                EXTI0_1_IRQHandler
-                0x08003464                WWDG_IRQHandler
-                0x08003464                RCC_IRQHandler
-                0x08003464                RTC_IRQHandler
-                0x08003464                I2C1_IRQHandler
-                0x08003464                TIM14_IRQHandler
-                0x08003464                TIM3_IRQHandler
-                0x08003464                USART2_IRQHandler
-                0x08003464                FLASH_IRQHandler
-                0x08003464                EXTI2_3_IRQHandler
-                0x08003464                USART1_IRQHandler
-                0x08003464                Default_Handler
-                0x08003464                I2C2_IRQHandler
-                0x08003464                TIM15_IRQHandler
-                0x08003464                TIM16_IRQHandler
-                0x08003464                DMA1_Channel2_3_IRQHandler
-                0x08003464                TIM6_IRQHandler
-                0x08003464                TIM1_CC_IRQHandler
-                0x08003464                DMA1_Channel1_IRQHandler
+                0x08003a48        0x2 startup/startup_stm32f030x8.o
+                0x08003a48                DMA1_Channel4_5_IRQHandler
+                0x08003a48                ADC1_IRQHandler
+                0x08003a48                SPI2_IRQHandler
+                0x08003a48                SPI1_IRQHandler
+                0x08003a48                TIM17_IRQHandler
+                0x08003a48                EXTI4_15_IRQHandler
+                0x08003a48                EXTI0_1_IRQHandler
+                0x08003a48                WWDG_IRQHandler
+                0x08003a48                RCC_IRQHandler
+                0x08003a48                RTC_IRQHandler
+                0x08003a48                I2C1_IRQHandler
+                0x08003a48                TIM14_IRQHandler
+                0x08003a48                TIM3_IRQHandler
+                0x08003a48                USART2_IRQHandler
+                0x08003a48                FLASH_IRQHandler
+                0x08003a48                EXTI2_3_IRQHandler
+                0x08003a48                USART1_IRQHandler
+                0x08003a48                Default_Handler
+                0x08003a48                I2C2_IRQHandler
+                0x08003a48                TIM15_IRQHandler
+                0x08003a48                TIM16_IRQHandler
+                0x08003a48                DMA1_Channel2_3_IRQHandler
+                0x08003a48                TIM6_IRQHandler
+                0x08003a48                TIM1_CC_IRQHandler
+                0x08003a48                DMA1_Channel1_IRQHandler
  .text.__aeabi_atexit
-                0x08003466        0xe c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(atexit_arm.o)
-                0x08003466                __aeabi_atexit
- .text._ZdlPvj  0x08003474        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(del_ops.o)
-                0x08003474                operator delete(void*, unsigned int)
- .text._ZdlPv   0x0800347c        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(del_op.o)
-                0x0800347c                operator delete(void*)
+                0x08003a4a        0xe c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(atexit_arm.o)
+                0x08003a4a                __aeabi_atexit
+ .text._ZdlPvj  0x08003a58        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(del_ops.o)
+                0x08003a58                operator delete(void*, unsigned int)
+ .text._ZdlPv   0x08003a60        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(del_op.o)
+                0x08003a60                operator delete(void*)
  .text._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
-                0x08003484       0x12 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(string-inst.o)
-                0x08003484                std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()
- *fill*         0x08003496        0x2 
+                0x08003a68       0x12 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(string-inst.o)
+                0x08003a68                std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()
+ *fill*         0x08003a7a        0x2 
  .text.startup._GLOBAL__sub_I__ZNSt12ctype_bynameIcEC2ERKSsj
-                0x08003498       0xb8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(locale-inst.o)
+                0x08003a7c       0xb8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(locale-inst.o)
  .text.startup._GLOBAL__sub_I__ZNSt12ctype_bynameIwEC2ERKSsj
-                0x08003550       0xb8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(wlocale-inst.o)
+                0x08003b34       0xb8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(wlocale-inst.o)
  .text.startup._GLOBAL__sub_I__ZNSt12ctype_bynameIwEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj
-                0x08003608       0x7c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
+                0x08003bec       0x7c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
  .text.startup._GLOBAL__sub_I__ZNSt12ctype_bynameIcEC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj
-                0x08003684       0x7c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x08003c68       0x7c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-locale-inst.o)
  .text.__cxa_atexit
-                0x08003700       0x1c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-cxa_atexit.o)
-                0x08003700                __cxa_atexit
+                0x08003ce4       0x1c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-cxa_atexit.o)
+                0x08003ce4                __cxa_atexit
  .text.__libc_init_array
-                0x0800371c       0x48 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
-                0x0800371c                __libc_init_array
- .text.free     0x08003764       0x14 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-malloc.o)
-                0x08003764                free
- .text.memcpy   0x08003778       0x12 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memcpy-stub.o)
-                0x08003778                memcpy
- *fill*         0x0800378a        0x2 
- .text._free_r  0x0800378c       0x94 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
-                0x0800378c                _free_r
+                0x08003d00       0x48 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
+                0x08003d00                __libc_init_array
+ .text.free     0x08003d48       0x14 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-malloc.o)
+                0x08003d48                free
+ .text.memcpy   0x08003d5c       0x12 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memcpy-stub.o)
+                0x08003d5c                memcpy
+ *fill*         0x08003d6e        0x2 
+ .text._free_r  0x08003d70       0x94 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
+                0x08003d70                _free_r
  .text.__malloc_lock
-                0x08003820        0x2 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
-                0x08003820                __malloc_lock
+                0x08003e04        0x2 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
+                0x08003e04                __malloc_lock
  .text.__malloc_unlock
-                0x08003822        0x2 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
-                0x08003822                __malloc_unlock
+                0x08003e06        0x2 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
+                0x08003e06                __malloc_unlock
  *(.glue_7)
- .glue_7        0x08003824        0x0 linker stubs
+ .glue_7        0x08003e08        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08003824        0x0 linker stubs
+ .glue_7t       0x08003e08        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08003824        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .eh_frame      0x08003e08        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
  *(.init)
- .init          0x08003824        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x08003824                _init
- .init          0x08003828        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+ .init          0x08003e08        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x08003e08                _init
+ .init          0x08003e0c        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
  *(.fini)
- .fini          0x08003830        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x08003830                _fini
- .fini          0x08003834        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
-                0x0800383c                . = ALIGN (0x4)
-                0x0800383c                _etext = .
+ .fini          0x08003e14        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x08003e14                _fini
+ .fini          0x08003e18        0x8 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
+                0x08003e20                . = ALIGN (0x4)
+                0x08003e20                _etext = .
 
-.vfp11_veneer   0x0800383c        0x0
- .vfp11_veneer  0x0800383c        0x0 linker stubs
+.vfp11_veneer   0x08003e20        0x0
+ .vfp11_veneer  0x08003e20        0x0 linker stubs
 
-.v4_bx          0x0800383c        0x0
- .v4_bx         0x0800383c        0x0 linker stubs
+.v4_bx          0x08003e20        0x0
+ .v4_bx         0x08003e20        0x0 linker stubs
 
-.iplt           0x0800383c        0x0
- .iplt          0x0800383c        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x08003e20        0x0
+ .iplt          0x08003e20        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.rodata         0x0800383c     0x290c
-                0x0800383c                . = ALIGN (0x4)
+.rodata         0x08003e20     0x290c
+                0x08003e20                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x0800383c       0x20 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
- .rodata        0x0800385c       0x10 Src/Game.o
-                0x0800385c                vtable for Game
- .rodata        0x0800386c       0x10 Src/Highscore.o
-                0x0800386c                vtable for Highscore
- .rodata        0x0800387c       0x10 Src/Sprite.o
-                0x0800387c                vtable for Sprite
- .rodata        0x0800388c     0x2814 Src/fonts.o
- .rodata        0x080060a0       0x18 Src/system_stm32f0xx.o
-                0x080060a0                AHBPrescTable
-                0x080060b0                APBPrescTable
+ .rodata        0x08003e20       0x20 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o
+ .rodata        0x08003e40       0x10 Src/Game.o
+                0x08003e40                vtable for Game
+ .rodata        0x08003e50       0x10 Src/Highscore.o
+                0x08003e50                vtable for Highscore
+ .rodata        0x08003e60       0x10 Src/Sprite.o
+                0x08003e60                vtable for Sprite
+ .rodata        0x08003e70     0x2814 Src/fonts.o
+ .rodata        0x08006684       0x18 Src/system_stm32f0xx.o
+                0x08006684                AHBPrescTable
+                0x08006694                APBPrescTable
  *(.rodata*)
  .rodata.str1.1
-                0x080060b8        0x5 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
+                0x0800669c        0x5 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
  .rodata.str1.1
-                0x080060bd       0x20 Src/CppMain.o
+                0x080066a1       0x20 Src/CppMain.o
  .rodata.str1.1
-                0x080060dd        0x8 Src/main.o
- *fill*         0x080060e5        0x3 
+                0x080066c1        0x8 Src/main.o
+ *fill*         0x080066c9        0x3 
  .rodata.__sf_fake_stderr
-                0x080060e8       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x080060e8                __sf_fake_stderr
+                0x080066cc       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x080066cc                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x08006108       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x08006108                __sf_fake_stdin
+                0x080066ec       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x080066ec                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x08006128       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x08006128                __sf_fake_stdout
-                0x08006148                . = ALIGN (0x4)
+                0x0800670c       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x0800670c                __sf_fake_stdout
+                0x0800672c                . = ALIGN (0x4)
 
-.rel.dyn        0x08006148        0x0
- .rel.iplt      0x08006148        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x0800672c        0x0
+ .rel.iplt      0x0800672c        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08006148        0x0
-                0x08006148                __exidx_start = .
+.ARM            0x0800672c        0x0
+                0x0800672c                __exidx_start = .
  *(.ARM.exidx*)
-                0x08006148                __exidx_end = .
+                0x0800672c                __exidx_end = .
 
-.preinit_array  0x08006148        0x0
-                0x08006148                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x0800672c        0x0
+                0x0800672c                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08006148                PROVIDE (__preinit_array_end, .)
+                0x0800672c                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x08006148       0x18
-                0x08006148                PROVIDE (__init_array_start, .)
+.init_array     0x0800672c       0x18
+                0x0800672c                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x08006148        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
- .init_array    0x0800614c        0x4 Src/CppMain.o
- .init_array    0x08006150        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(locale-inst.o)
- .init_array    0x08006154        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(wlocale-inst.o)
- .init_array    0x08006158        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
- .init_array    0x0800615c        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-locale-inst.o)
-                0x08006160                PROVIDE (__init_array_end, .)
+ .init_array    0x0800672c        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .init_array    0x08006730        0x4 Src/CppMain.o
+ .init_array    0x08006734        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(locale-inst.o)
+ .init_array    0x08006738        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(wlocale-inst.o)
+ .init_array    0x0800673c        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
+ .init_array    0x08006740        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-locale-inst.o)
+                0x08006744                PROVIDE (__init_array_end, .)
 
-.fini_array     0x08006160        0x4
+.fini_array     0x08006744        0x4
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08006160        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+ .fini_array    0x08006744        0x4 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
-                0x08006164                _sidata = LOADADDR (.data)
+                0x08006748                _sidata = LOADADDR (.data)
 
-.data           0x20000000       0x8c load address 0x08006164
+.data           0x20000000       0x8c load address 0x08006748
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -17589,14 +17593,14 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
                 0x2000008c                . = ALIGN (0x4)
                 0x2000008c                _edata = .
 
-.jcr            0x2000008c        0x0 load address 0x080061f0
+.jcr            0x2000008c        0x0 load address 0x080067d4
  .jcr           0x2000008c        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.igot.plt       0x2000008c        0x0 load address 0x080061f0
+.igot.plt       0x2000008c        0x0 load address 0x080067d4
  .igot.plt      0x2000008c        0x0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
                 0x2000008c                . = ALIGN (0x4)
 
-.bss            0x2000008c     0x1320 load address 0x080061f0
+.bss            0x2000008c     0x1320 load address 0x080067d4
                 0x2000008c                _sbss = .
                 0x2000008c                __bss_start__ = _sbss
  *(.bss)
@@ -17754,7 +17758,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
                 0x200013ac                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x200013ac      0x604 load address 0x080061f0
+                0x200013ac      0x604 load address 0x080067d4
                 0x200013b0                . = ALIGN (0x8)
  *fill*         0x200013ac        0x4 
                 0x200013b0                PROVIDE (end, .)
@@ -17881,7 +17885,7 @@ LOAD c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15
                 0x0000093e       0x1e c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtn.o
 OUTPUT(JetPac_Game.elf elf32-littlearm)
 
-.debug_info     0x00000000    0x363fb
+.debug_info     0x00000000    0x36a65
  .debug_info    0x00000000      0xe5d Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_info    0x00000e5d     0x100d Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
  .debug_info    0x00001e6a      0xe66 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
@@ -17898,22 +17902,22 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .debug_info    0x00015b9a     0x23e1 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
  .debug_info    0x00017f7b      0x2b0 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o
  .debug_info    0x0001822b      0xbbc Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_info    0x00018de7     0x6c6c Src/CppMain.o
- .debug_info    0x0001fa53     0x2af1 Src/ExtraFunctions.o
- .debug_info    0x00022544     0x6604 Src/Game.o
- .debug_info    0x00028b48     0x52c8 Src/Highscore.o
- .debug_info    0x0002de10      0x5ae Src/Object.o
- .debug_info    0x0002e3be      0x3a5 Src/Sprite.o
- .debug_info    0x0002e763      0xa2d Src/fonts.o
- .debug_info    0x0002f190     0x1c54 Src/main.o
- .debug_info    0x00030de4     0x13d6 Src/ssd1306.o
- .debug_info    0x000321ba     0x180e Src/stm32f0xx_hal_msp.o
- .debug_info    0x000339c8     0x1117 Src/stm32f0xx_hal_timebase_TIM.o
- .debug_info    0x00034adf      0xe16 Src/stm32f0xx_it.o
- .debug_info    0x000358f5      0xa7b Src/system_stm32f0xx.o
- .debug_info    0x00036370       0x8b startup/startup_stm32f030x8.o
+ .debug_info    0x00018de7     0x71d5 Src/CppMain.o
+ .debug_info    0x0001ffbc     0x2af1 Src/ExtraFunctions.o
+ .debug_info    0x00022aad     0x66d9 Src/Game.o
+ .debug_info    0x00029186     0x52c8 Src/Highscore.o
+ .debug_info    0x0002e44e      0x5cb Src/Object.o
+ .debug_info    0x0002ea19      0x3b4 Src/Sprite.o
+ .debug_info    0x0002edcd      0xa2d Src/fonts.o
+ .debug_info    0x0002f7fa     0x1c54 Src/main.o
+ .debug_info    0x0003144e     0x13d6 Src/ssd1306.o
+ .debug_info    0x00032824     0x180e Src/stm32f0xx_hal_msp.o
+ .debug_info    0x00034032     0x1117 Src/stm32f0xx_hal_timebase_TIM.o
+ .debug_info    0x00035149      0xe16 Src/stm32f0xx_it.o
+ .debug_info    0x00035f5f      0xa7b Src/system_stm32f0xx.o
+ .debug_info    0x000369da       0x8b startup/startup_stm32f030x8.o
 
-.debug_abbrev   0x00000000     0x642c
+.debug_abbrev   0x00000000     0x64c7
  .debug_abbrev  0x00000000      0x30c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_abbrev  0x0000030c      0x336 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
  .debug_abbrev  0x00000642      0x2b2 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
@@ -17930,22 +17934,22 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .debug_abbrev  0x000029a9      0x3f8 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
  .debug_abbrev  0x00002da1      0x197 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o
  .debug_abbrev  0x00002f38      0x307 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_abbrev  0x0000323f      0x85d Src/CppMain.o
- .debug_abbrev  0x00003a9c      0x465 Src/ExtraFunctions.o
- .debug_abbrev  0x00003f01      0x906 Src/Game.o
- .debug_abbrev  0x00004807      0x7a0 Src/Highscore.o
- .debug_abbrev  0x00004fa7      0x17f Src/Object.o
- .debug_abbrev  0x00005126      0x1ae Src/Sprite.o
- .debug_abbrev  0x000052d4      0x1b3 Src/fonts.o
- .debug_abbrev  0x00005487      0x35c Src/main.o
- .debug_abbrev  0x000057e3      0x2ef Src/ssd1306.o
- .debug_abbrev  0x00005ad2      0x282 Src/stm32f0xx_hal_msp.o
- .debug_abbrev  0x00005d54      0x2a4 Src/stm32f0xx_hal_timebase_TIM.o
- .debug_abbrev  0x00005ff8      0x21d Src/stm32f0xx_it.o
- .debug_abbrev  0x00006215      0x205 Src/system_stm32f0xx.o
- .debug_abbrev  0x0000641a       0x12 startup/startup_stm32f030x8.o
+ .debug_abbrev  0x0000323f      0x891 Src/CppMain.o
+ .debug_abbrev  0x00003ad0      0x465 Src/ExtraFunctions.o
+ .debug_abbrev  0x00003f35      0x943 Src/Game.o
+ .debug_abbrev  0x00004878      0x7a0 Src/Highscore.o
+ .debug_abbrev  0x00005018      0x1a3 Src/Object.o
+ .debug_abbrev  0x000051bb      0x1b4 Src/Sprite.o
+ .debug_abbrev  0x0000536f      0x1b3 Src/fonts.o
+ .debug_abbrev  0x00005522      0x35c Src/main.o
+ .debug_abbrev  0x0000587e      0x2ef Src/ssd1306.o
+ .debug_abbrev  0x00005b6d      0x282 Src/stm32f0xx_hal_msp.o
+ .debug_abbrev  0x00005def      0x2a4 Src/stm32f0xx_hal_timebase_TIM.o
+ .debug_abbrev  0x00006093      0x21d Src/stm32f0xx_it.o
+ .debug_abbrev  0x000062b0      0x205 Src/system_stm32f0xx.o
+ .debug_abbrev  0x000064b5       0x12 startup/startup_stm32f030x8.o
 
-.debug_loc      0x00000000     0xf04d
+.debug_loc      0x00000000     0xf082
  .debug_loc     0x00000000       0x7c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_loc     0x0000007c      0x3cc Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
  .debug_loc     0x00000448      0x307 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
@@ -17962,19 +17966,19 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .debug_loc     0x0000c61a     0x1297 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
  .debug_loc     0x0000d8b1       0xb4 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o
  .debug_loc     0x0000d965      0x2d9 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_loc     0x0000dc3e      0x3df Src/CppMain.o
- .debug_loc     0x0000e01d       0x21 Src/ExtraFunctions.o
- .debug_loc     0x0000e03e      0x715 Src/Game.o
- .debug_loc     0x0000e753      0x20b Src/Highscore.o
- .debug_loc     0x0000e95e      0x176 Src/Object.o
- .debug_loc     0x0000ead4       0x8c Src/Sprite.o
- .debug_loc     0x0000eb60       0x42 Src/main.o
- .debug_loc     0x0000eba2      0x24c Src/ssd1306.o
- .debug_loc     0x0000edee       0xbe Src/stm32f0xx_hal_msp.o
- .debug_loc     0x0000eeac       0x7a Src/stm32f0xx_hal_timebase_TIM.o
- .debug_loc     0x0000ef26      0x127 Src/system_stm32f0xx.o
+ .debug_loc     0x0000dc3e      0x392 Src/CppMain.o
+ .debug_loc     0x0000dfd0       0x21 Src/ExtraFunctions.o
+ .debug_loc     0x0000dff1      0x6f6 Src/Game.o
+ .debug_loc     0x0000e6e7      0x20b Src/Highscore.o
+ .debug_loc     0x0000e8f2      0x1b4 Src/Object.o
+ .debug_loc     0x0000eaa6       0xef Src/Sprite.o
+ .debug_loc     0x0000eb95       0x42 Src/main.o
+ .debug_loc     0x0000ebd7      0x24c Src/ssd1306.o
+ .debug_loc     0x0000ee23       0xbe Src/stm32f0xx_hal_msp.o
+ .debug_loc     0x0000eee1       0x7a Src/stm32f0xx_hal_timebase_TIM.o
+ .debug_loc     0x0000ef5b      0x127 Src/system_stm32f0xx.o
 
-.debug_aranges  0x00000000     0x1210
+.debug_aranges  0x00000000     0x1218
  .debug_aranges
                 0x00000000       0xb0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_aranges
@@ -18012,31 +18016,31 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .debug_aranges
                 0x00000e70       0x38 Src/ExtraFunctions.o
  .debug_aranges
-                0x00000ea8       0x98 Src/Game.o
+                0x00000ea8       0xa0 Src/Game.o
  .debug_aranges
-                0x00000f40       0x48 Src/Highscore.o
+                0x00000f48       0x48 Src/Highscore.o
  .debug_aranges
-                0x00000f88       0x80 Src/Object.o
+                0x00000f90       0x80 Src/Object.o
  .debug_aranges
-                0x00001008       0x50 Src/Sprite.o
+                0x00001010       0x50 Src/Sprite.o
  .debug_aranges
-                0x00001058       0x18 Src/fonts.o
+                0x00001060       0x18 Src/fonts.o
  .debug_aranges
-                0x00001070       0x40 Src/main.o
+                0x00001078       0x40 Src/main.o
  .debug_aranges
-                0x000010b0       0x58 Src/ssd1306.o
+                0x000010b8       0x58 Src/ssd1306.o
  .debug_aranges
-                0x00001108       0x50 Src/stm32f0xx_hal_msp.o
+                0x00001110       0x50 Src/stm32f0xx_hal_msp.o
  .debug_aranges
-                0x00001158       0x30 Src/stm32f0xx_hal_timebase_TIM.o
+                0x00001160       0x30 Src/stm32f0xx_hal_timebase_TIM.o
  .debug_aranges
-                0x00001188       0x38 Src/stm32f0xx_it.o
+                0x00001190       0x38 Src/stm32f0xx_it.o
  .debug_aranges
-                0x000011c0       0x28 Src/system_stm32f0xx.o
+                0x000011c8       0x28 Src/system_stm32f0xx.o
  .debug_aranges
-                0x000011e8       0x28 startup/startup_stm32f030x8.o
+                0x000011f0       0x28 startup/startup_stm32f030x8.o
 
-.debug_ranges   0x00000000     0x19a0
+.debug_ranges   0x00000000     0x1998
  .debug_ranges  0x00000000       0xa0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_ranges  0x000000a0      0x120 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
  .debug_ranges  0x000001c0       0x70 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
@@ -18053,19 +18057,19 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .debug_ranges  0x00001138      0x240 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
  .debug_ranges  0x00001378       0x78 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o
  .debug_ranges  0x000013f0       0x50 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_ranges  0x00001440       0xb8 Src/CppMain.o
- .debug_ranges  0x000014f8       0x28 Src/ExtraFunctions.o
- .debug_ranges  0x00001520       0xe8 Src/Game.o
- .debug_ranges  0x00001608       0x80 Src/Highscore.o
- .debug_ranges  0x00001688       0x70 Src/Object.o
- .debug_ranges  0x000016f8       0x40 Src/Sprite.o
- .debug_ranges  0x00001738       0xb0 Src/main.o
- .debug_ranges  0x000017e8       0x60 Src/ssd1306.o
- .debug_ranges  0x00001848       0xb8 Src/stm32f0xx_hal_msp.o
- .debug_ranges  0x00001900       0x40 Src/stm32f0xx_hal_timebase_TIM.o
- .debug_ranges  0x00001940       0x28 Src/stm32f0xx_it.o
- .debug_ranges  0x00001968       0x18 Src/system_stm32f0xx.o
- .debug_ranges  0x00001980       0x20 startup/startup_stm32f030x8.o
+ .debug_ranges  0x00001440       0xa8 Src/CppMain.o
+ .debug_ranges  0x000014e8       0x28 Src/ExtraFunctions.o
+ .debug_ranges  0x00001510       0xf0 Src/Game.o
+ .debug_ranges  0x00001600       0x80 Src/Highscore.o
+ .debug_ranges  0x00001680       0x70 Src/Object.o
+ .debug_ranges  0x000016f0       0x40 Src/Sprite.o
+ .debug_ranges  0x00001730       0xb0 Src/main.o
+ .debug_ranges  0x000017e0       0x60 Src/ssd1306.o
+ .debug_ranges  0x00001840       0xb8 Src/stm32f0xx_hal_msp.o
+ .debug_ranges  0x000018f8       0x40 Src/stm32f0xx_hal_timebase_TIM.o
+ .debug_ranges  0x00001938       0x28 Src/stm32f0xx_it.o
+ .debug_ranges  0x00001960       0x18 Src/system_stm32f0xx.o
+ .debug_ranges  0x00001978       0x20 startup/startup_stm32f030x8.o
 
 .debug_macro    0x00000000    0x14160
  .debug_macro   0x00000000      0x32c Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
@@ -18232,7 +18236,7 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .debug_macro   0x00013a92      0x3c6 Src/stm32f0xx_it.o
  .debug_macro   0x00013e58      0x308 Src/system_stm32f0xx.o
 
-.debug_line     0x00000000    0x1503c
+.debug_line     0x00000000    0x150c6
  .debug_line    0x00000000      0x97e Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_line    0x0000097e      0x9ae Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
  .debug_line    0x0000132c      0x990 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
@@ -18249,22 +18253,22 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .debug_line    0x0000a9f0      0xe0f Middlewares/Third_Party/FreeRTOS/Source/tasks.o
  .debug_line    0x0000b7ff      0x61c Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o
  .debug_line    0x0000be1b      0x691 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_line    0x0000c4ac     0x14b5 Src/CppMain.o
- .debug_line    0x0000d961     0x1086 Src/ExtraFunctions.o
- .debug_line    0x0000e9e7     0x11f2 Src/Game.o
- .debug_line    0x0000fbd9      0xc97 Src/Highscore.o
- .debug_line    0x00010870      0x409 Src/Object.o
- .debug_line    0x00010c79      0x38e Src/Sprite.o
- .debug_line    0x00011007      0x7db Src/fonts.o
- .debug_line    0x000117e2      0xb25 Src/main.o
- .debug_line    0x00012307      0x906 Src/ssd1306.o
- .debug_line    0x00012c0d      0x8b7 Src/stm32f0xx_hal_msp.o
- .debug_line    0x000134c4      0x840 Src/stm32f0xx_hal_timebase_TIM.o
- .debug_line    0x00013d04      0xa87 Src/stm32f0xx_it.o
- .debug_line    0x0001478b      0x82e Src/system_stm32f0xx.o
- .debug_line    0x00014fb9       0x83 startup/startup_stm32f030x8.o
+ .debug_line    0x0000c4ac     0x14e6 Src/CppMain.o
+ .debug_line    0x0000d992     0x1087 Src/ExtraFunctions.o
+ .debug_line    0x0000ea19     0x122c Src/Game.o
+ .debug_line    0x0000fc45      0xc97 Src/Highscore.o
+ .debug_line    0x000108dc      0x420 Src/Object.o
+ .debug_line    0x00010cfc      0x395 Src/Sprite.o
+ .debug_line    0x00011091      0x7db Src/fonts.o
+ .debug_line    0x0001186c      0xb25 Src/main.o
+ .debug_line    0x00012391      0x906 Src/ssd1306.o
+ .debug_line    0x00012c97      0x8b7 Src/stm32f0xx_hal_msp.o
+ .debug_line    0x0001354e      0x840 Src/stm32f0xx_hal_timebase_TIM.o
+ .debug_line    0x00013d8e      0xa87 Src/stm32f0xx_it.o
+ .debug_line    0x00014815      0x82e Src/system_stm32f0xx.o
+ .debug_line    0x00015043       0x83 startup/startup_stm32f030x8.o
 
-.debug_str      0x00000000    0x5ddcd
+.debug_str      0x00000000    0x5dde5
  .debug_str     0x00000000    0x4464e Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
                               0x44966 (size before relaxing)
  .debug_str     0x0004464e      0x1ef Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
@@ -18298,30 +18302,30 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .debug_str     0x0004f2f7      0x243 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
                                0x9a46 (size before relaxing)
  .debug_str     0x0004f53a     0x957d Src/CppMain.o
-                              0x532c8 (size before relaxing)
+                              0x532c1 (size before relaxing)
  .debug_str     0x00058ab7       0x5e Src/ExtraFunctions.o
                               0x4928a (size before relaxing)
- .debug_str     0x00058b15     0x4a8e Src/Game.o
-                              0x4e57f (size before relaxing)
- .debug_str     0x0005d5a3      0x3bb Src/Highscore.o
+ .debug_str     0x00058b15     0x4ab8 Src/Game.o
+                              0x4e5bb (size before relaxing)
+ .debug_str     0x0005d5cd      0x3bb Src/Highscore.o
                               0x10909 (size before relaxing)
- .debug_str     0x0005d95e       0x48 Src/Object.o
+ .debug_str     0x0005d988       0x48 Src/Object.o
                                0x3a99 (size before relaxing)
- .debug_str     0x0005d9a6      0x11d Src/Sprite.o
+ .debug_str     0x0005d9d0      0x11d Src/Sprite.o
                                0x39a6 (size before relaxing)
- .debug_str     0x0005dac3       0x2c Src/fonts.o
+ .debug_str     0x0005daed       0x2c Src/fonts.o
                               0x4443b (size before relaxing)
- .debug_str     0x0005daef       0xf6 Src/main.o
+ .debug_str     0x0005db19       0xf6 Src/main.o
                               0x4a30a (size before relaxing)
- .debug_str     0x0005dbe5       0x93 Src/ssd1306.o
+ .debug_str     0x0005dc0f       0x81 Src/ssd1306.o
                               0x44a49 (size before relaxing)
- .debug_str     0x0005dc78       0x25 Src/stm32f0xx_hal_msp.o
+ .debug_str     0x0005dc90       0x25 Src/stm32f0xx_hal_msp.o
                               0x44f4f (size before relaxing)
- .debug_str     0x0005dc9d       0x61 Src/stm32f0xx_hal_timebase_TIM.o
+ .debug_str     0x0005dcb5       0x61 Src/stm32f0xx_hal_timebase_TIM.o
                               0x44ade (size before relaxing)
- .debug_str     0x0005dcfe       0x75 Src/stm32f0xx_it.o
+ .debug_str     0x0005dd16       0x75 Src/stm32f0xx_it.o
                               0x4982c (size before relaxing)
- .debug_str     0x0005dd73       0x5a Src/system_stm32f0xx.o
+ .debug_str     0x0005dd8b       0x5a Src/system_stm32f0xx.o
                               0x4445f (size before relaxing)
 
 .comment        0x00000000       0x7f
@@ -18356,7 +18360,7 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .comment       0x0000007f       0x80 Src/stm32f0xx_it.o
  .comment       0x0000007f       0x80 Src/system_stm32f0xx.o
 
-.debug_frame    0x00000000     0xac0c
+.debug_frame    0x00000000     0xac40
  .debug_frame   0x00000000      0x178 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o
  .debug_frame   0x00000178       0xe4 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o
  .debug_frame   0x0000025c       0xc0 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o
@@ -18373,35 +18377,35 @@ OUTPUT(JetPac_Game.elf elf32-littlearm)
  .debug_frame   0x0000273c      0x448 Middlewares/Third_Party/FreeRTOS/Source/tasks.o
  .debug_frame   0x00002b84      0x110 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o
  .debug_frame   0x00002c94       0x9c Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o
- .debug_frame   0x00002d30       0xd0 Src/CppMain.o
- .debug_frame   0x00002e00       0x60 Src/ExtraFunctions.o
- .debug_frame   0x00002e60      0x18c Src/Game.o
- .debug_frame   0x00002fec       0x80 Src/Highscore.o
- .debug_frame   0x0000306c       0xec Src/Object.o
- .debug_frame   0x00003158       0x90 Src/Sprite.o
- .debug_frame   0x000031e8       0x88 Src/main.o
- .debug_frame   0x00003270       0xe8 Src/ssd1306.o
- .debug_frame   0x00003358       0xc8 Src/stm32f0xx_hal_msp.o
- .debug_frame   0x00003420       0x4c Src/stm32f0xx_hal_timebase_TIM.o
- .debug_frame   0x0000346c       0x60 Src/stm32f0xx_it.o
- .debug_frame   0x000034cc       0x3c Src/system_stm32f0xx.o
- .debug_frame   0x00003508       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(atexit_arm.o)
- .debug_frame   0x00003530       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(del_ops.o)
- .debug_frame   0x00003558       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(del_op.o)
- .debug_frame   0x00003580     0x116c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(string-inst.o)
- .debug_frame   0x000046ec     0x1e90 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(locale-inst.o)
- .debug_frame   0x0000657c     0x1e90 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(wlocale-inst.o)
- .debug_frame   0x0000840c     0x12c0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
- .debug_frame   0x000096cc     0x1298 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-locale-inst.o)
- .debug_frame   0x0000a964       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
- .debug_frame   0x0000a984       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-cxa_atexit.o)
- .debug_frame   0x0000a9b0      0x140 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
- .debug_frame   0x0000aaf0       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
- .debug_frame   0x0000ab1c       0x40 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-malloc.o)
- .debug_frame   0x0000ab5c       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x0000ab84       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x0000abb0       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x0000abdc       0x30 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x00002d30       0xe0 Src/CppMain.o
+ .debug_frame   0x00002e10       0x60 Src/ExtraFunctions.o
+ .debug_frame   0x00002e70      0x1a8 Src/Game.o
+ .debug_frame   0x00003018       0x80 Src/Highscore.o
+ .debug_frame   0x00003098       0xf0 Src/Object.o
+ .debug_frame   0x00003188       0x94 Src/Sprite.o
+ .debug_frame   0x0000321c       0x88 Src/main.o
+ .debug_frame   0x000032a4       0xe8 Src/ssd1306.o
+ .debug_frame   0x0000338c       0xc8 Src/stm32f0xx_hal_msp.o
+ .debug_frame   0x00003454       0x4c Src/stm32f0xx_hal_timebase_TIM.o
+ .debug_frame   0x000034a0       0x60 Src/stm32f0xx_it.o
+ .debug_frame   0x00003500       0x3c Src/system_stm32f0xx.o
+ .debug_frame   0x0000353c       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(atexit_arm.o)
+ .debug_frame   0x00003564       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(del_ops.o)
+ .debug_frame   0x0000358c       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(del_op.o)
+ .debug_frame   0x000035b4     0x116c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(string-inst.o)
+ .debug_frame   0x00004720     0x1e90 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(locale-inst.o)
+ .debug_frame   0x000065b0     0x1e90 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(wlocale-inst.o)
+ .debug_frame   0x00008440     0x12c0 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-wlocale-inst.o)
+ .debug_frame   0x00009700     0x1298 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libstdc++_nano.a(cxx11-locale-inst.o)
+ .debug_frame   0x0000a998       0x20 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000a9b8       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-cxa_atexit.o)
+ .debug_frame   0x0000a9e4      0x140 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x0000ab24       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x0000ab50       0x40 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-malloc.o)
+ .debug_frame   0x0000ab90       0x28 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000abb8       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000abe4       0x2c c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000ac10       0x30 c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
 
 .stabstr        0x00000000      0x1ed
  .stabstr       0x00000000      0x1ed c:/ac6/systemworkbench/plugins/fr.ac6.mcu.externaltools.arm-none.win32_1.15.0.201708311556/tools/compiler/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libnosys.a(close.o)
