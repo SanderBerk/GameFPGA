@@ -49,6 +49,11 @@ uint8_t Object::getSpritenr()
 	return this->spritenr;
 }
 
+void Object::setSpritenr(uint8_t j)
+{
+	this->spritenr = j;
+}
+
 uint16_t Object::getMiddleX()
 {
 	return (LposX + Xlength) / 4;

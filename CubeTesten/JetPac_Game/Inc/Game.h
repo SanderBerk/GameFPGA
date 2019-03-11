@@ -17,9 +17,11 @@ public:
 	void SetHighScore(Highscore);
 	enum States { INIT, MAINSCREEN, HIGHSCORES, SETTINGS, PLAYING };
 	States GameState;
+
 	void removeObjectUni(uint8_t UniqueNr);
 	uint8_t addObject(Object * obj);
 	int ChangePosObjbyUniNr(uint8_t uninr, uint16_t x, uint16_t y);
+	bool changeSpriteNr(int,int); // Dangerous!!!!
 	//void showall();
 	void clearObjects();
 	void draw();
@@ -28,6 +30,8 @@ public:
 	int checkColl(uint8_t uninr, uint8_t line1, uint8_t line2, uint8_t line3, uint8_t line4);
 	int getObjX(uint8_t uninr);
 	int getObjY(uint8_t uninr);
+
+	char Game::getCharbySpritenr(int j);
 
 private:
 	Object * First = nullptr;

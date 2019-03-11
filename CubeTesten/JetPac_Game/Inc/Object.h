@@ -15,12 +15,15 @@ class Object
 {
 public:
 	Object(int xpos, int ypos, int nr, int Xlen, int Ylen);
-	~Object();
+	virtual ~Object();
 	void changeLposX(uint16_t);
 	void changeLposY(uint16_t);
 	uint16_t getLposX();
 	uint16_t getLposY();
 	uint8_t getSpritenr();
+
+
+	void setSpritenr(uint8_t j);
 	uint16_t getMiddleX();
 	uint16_t getMiddleY();
 	void setNext(Object *);

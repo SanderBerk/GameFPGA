@@ -95,7 +95,20 @@ void Game::removeObjectUni(uint8_t UniqueNr)
 	}
 }
 
-
+bool Game::changeSpriteNr(int Uninr,int sprtnr)
+{
+	Object * temp = First;
+	while (temp != nullptr)
+	{
+		if (temp->UniqueIDWhenactive == Uninr)
+		{
+			temp->spritenr = sprtnr;
+			return true;
+		}
+		temp = temp->Next;
+	}
+	return false;
+}
 
 int Game::ChangePosObjbyUniNr(uint8_t Uninr, uint16_t x, uint16_t y)
 {
@@ -244,10 +257,11 @@ void Game::clearObjects()
 {
 	First = nullptr;
 	Last = nullptr;
+	amountCurrentSprites = 0;
 }
 
 
-char getCharbySpritenr(int j)
+char Game::getCharbySpritenr(int j)
 {
 	if(j == 7) return '1';
 	if(j == 8) return '2';
@@ -285,6 +299,8 @@ char getCharbySpritenr(int j)
 	if(j == 40) return 'x';
 	if(j == 41) return 'y';
 	if(j == 42) return 'z';
+	if(j == 43) return '<';
+	if(j == 44) return '>';
 	else
 		return -1;
 }

@@ -33,9 +33,8 @@ void Settings();
 void Mainscreen();
 void Highscores();
 void Playing();
-void draw();
+void Draw();
 void SendviaSPI(Object obj);
-void drawssd1306();
 
 
 
@@ -243,76 +242,67 @@ void Mainscreen()
 					}
 	}
 }
-void Highscores()
+void HighscoreEntering()
 {
 	int highscores = 1;
 	MainGame.clearObjects();
+	int sprt = 7;
 
-	Object aO = Object(0,0,getSpriteNrByString('a'),5,5);
+	Object aO = Object(50,10,sprt,5,5);
 	uint8_t a = MainGame.addObject(&aO);
 
-	Object bO = Object(6,0,getSpriteNrByString('b'),5,5);
-	uint8_t b = MainGame.addObject(&bO);
+	Object lO = Object(40,10,43,5,5);
+	MainGame.addObject(&lO);
 
-	Object cO = Object(12,0,getSpriteNrByString('c'),5,5);
-	uint8_t c = MainGame.addObject(&cO);
-
-	Object dO = Object(18,0,getSpriteNrByString('d'),5,5);
-	uint8_t d = MainGame.addObject(&dO);
-
-	Object eO = Object(24,0,getSpriteNrByString('e'),5,5);
-	uint8_t e = MainGame.addObject(&eO);
-
-	Object fO = Object(30,0,getSpriteNrByString('f'),5,5);
-	uint8_t f = MainGame.addObject(&fO);
-
-	Object gO = Object(36,0,getSpriteNrByString('g'),5,5);
-	uint8_t g = MainGame.addObject(&gO);
-
-	Object hO = Object(42,0,getSpriteNrByString('h'),5,5);
-	uint8_t h = MainGame.addObject(&hO);
-
-	Object iO = Object(48,0,getSpriteNrByString('i'),5,5);
-	uint8_t i = MainGame.addObject(&iO);
-
-	Object jO = Object(54,0,getSpriteNrByString('j'),5,5);
-	uint8_t j = MainGame.addObject(&jO);
-
-	Object kO = Object(60,0,getSpriteNrByString('k'),5,5);
-	uint8_t k = MainGame.addObject(&kO);
-
-	Object lO = Object(67,0,getSpriteNrByString('l'),5,5);
-	uint8_t l = MainGame.addObject(&lO);
-
-	Object mO = Object(73,0,getSpriteNrByString('m'),5,5);
-	uint8_t m = MainGame.addObject(&mO);
-
-	Object nO = Object(79,0,getSpriteNrByString('n'),5,5);
-	uint8_t n = MainGame.addObject(&nO);
-
-	Object oO = Object(85,0,getSpriteNrByString('o'),5,5);
-	uint8_t o = MainGame.addObject(&oO);
-
-	Object pO = Object(92,0,getSpriteNrByString('p'),5,5);
-	uint8_t p = MainGame.addObject(&pO);
-
-	Object qO = Object(98,0,getSpriteNrByString('q'),5,5);
-	uint8_t q = MainGame.addObject(&qO);
-
-	Object rO = Object(103,0,getSpriteNrByString('r'),5,5);
-	uint8_t r = MainGame.addObject(&rO);
+	Object rO = Object(60,10,44,5,5);
+	MainGame.addObject(&rO);
 
 	ssd1306_Fill(Black);
+	char char1;
+	char char2;
+	char char3;
 	while(highscores == 1)
 	{
+		ManualCheck();
 		MainGame.clearssd1306();
 
+		if(statebutton3 == false)
+		{
+		    sprt++;
+		    if(sprt > 42) sprt = 7;
 
+		    bool t = MainGame.changeSpriteNr(a,sprt);
+		}
+		if(statebutton2 == false)
+		{
+			if(char1 == "")char1 = MainGame.getCharbySpritenr(sprt);
+			else if(char2 == "")char2 = MainGame.getCharbySpritenr(sprt);
+			else if(char3 == "")char3 = MainGame.getCharbySpritenr(sprt);
+			else
+			{
+				MainGame.GameState = MainGame.MAINSCREEN;
+				highscores = 0;
+			}
+		}
 
 		MainGame.drawssd1306();
 
 	}
+
+	Highscore temp =
+
 }
+
+void Highscores()
+{
+	int highscores = 1;
+	while(highscores == 1)
+	{
+
+	}
+}
+
+
 void Playing()
 {
 	int playing = 1;
