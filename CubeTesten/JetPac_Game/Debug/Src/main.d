@@ -24,8 +24,6 @@ Src/main.o: ../Src/main.c \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h \
- C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h \
- C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
@@ -96,10 +94,6 @@ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Dri
 C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h:
 
 C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h:
-
-C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h:
-
-C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi_ex.h:
 
 C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPac_Game/Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h:
 

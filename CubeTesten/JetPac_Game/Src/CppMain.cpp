@@ -98,63 +98,63 @@ void Mainscreen()
 {
 	int mainscreen = 1;
 	MainGame.clearObjects();
-	Object temp = Object(260,80,getSpriteNrByString('j'),20,20);
+	Object temp = Object(260,80,MainGame.getSpriteNrByString('j'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(280,80,getSpriteNrByString('e'),20,20);
+	temp = Object(280,80,MainGame.getSpriteNrByString('e'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(300,80,getSpriteNrByString('t'),20,20);
+	temp = Object(300,80,MainGame.getSpriteNrByString('t'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(320,80,getSpriteNrByString('p'),20,20);
+	temp = Object(320,80,MainGame.getSpriteNrByString('p'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(340,80,getSpriteNrByString('a'),20,20);
+	temp = Object(340,80,MainGame.getSpriteNrByString('a'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(360,80,getSpriteNrByString('c'),20,20);
+	temp = Object(360,80,MainGame.getSpriteNrByString('c'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(380,80,getSpriteNrByString('k'),20,20);
-	MainGame.addObject(&temp);
-
-	temp = Object(280,180,getSpriteNrByString('p'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(300,180,getSpriteNrByString('l'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(320,180,getSpriteNrByString('a'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(340,180,getSpriteNrByString('y'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(220,280,getSpriteNrByString('h'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(240,280,getSpriteNrByString('i'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(260,280,getSpriteNrByString('g'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(280,280,getSpriteNrByString('h'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(300,280,getSpriteNrByString('s'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(320,280,getSpriteNrByString('c'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(340,280,getSpriteNrByString('o'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(360,280,getSpriteNrByString('r'),20,20);
-	MainGame.addObject(&temp);
-	temp = Object(380,280,getSpriteNrByString('e'),20,20);
+	temp = Object(380,80,MainGame.getSpriteNrByString('k'),20,20);
 	MainGame.addObject(&temp);
 
-	temp = Object(240,380,getSpriteNrByString('s'),20,20);
+	temp = Object(280,180,MainGame.getSpriteNrByString('p'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(260,380,getSpriteNrByString('e'),20,20);
+	temp = Object(300,180,MainGame.getSpriteNrByString('l'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(280,380,getSpriteNrByString('t'),20,20);
+	temp = Object(320,180,MainGame.getSpriteNrByString('a'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(300,380,getSpriteNrByString('t'),20,20);
+	temp = Object(340,180,MainGame.getSpriteNrByString('y'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(320,380,getSpriteNrByString('i'),20,20);
+	temp = Object(220,280,MainGame.getSpriteNrByString('h'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(340,380,getSpriteNrByString('n'),20,20);
+	temp = Object(240,280,MainGame.getSpriteNrByString('i'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(360,380,getSpriteNrByString('g'),20,20);
+	temp = Object(260,280,MainGame.getSpriteNrByString('g'),20,20);
 	MainGame.addObject(&temp);
-	temp = Object(380,380,getSpriteNrByString('s'),20,20);
+	temp = Object(280,280,MainGame.getSpriteNrByString('h'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(300,280,MainGame.getSpriteNrByString('s'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(320,280,MainGame.getSpriteNrByString('c'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(340,280,MainGame.getSpriteNrByString('o'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(360,280,MainGame.getSpriteNrByString('r'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(380,280,MainGame.getSpriteNrByString('e'),20,20);
+	MainGame.addObject(&temp);
+
+	temp = Object(240,380,MainGame.getSpriteNrByString('s'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(260,380,MainGame.getSpriteNrByString('e'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(280,380,MainGame.getSpriteNrByString('t'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(300,380,MainGame.getSpriteNrByString('t'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(320,380,MainGame.getSpriteNrByString('i'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(340,380,MainGame.getSpriteNrByString('n'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(360,380,MainGame.getSpriteNrByString('g'),20,20);
+	MainGame.addObject(&temp);
+	temp = Object(380,380,MainGame.getSpriteNrByString('s'),20,20);
 	MainGame.addObject(&temp);
 	temp = Object(420,180,6,20,20);//pijltje
 	int arrow = MainGame.addObject(&temp);
@@ -166,7 +166,7 @@ void Mainscreen()
 
 	while(mainscreen == 1)
 	{
-		//ManualCheck();
+		ManualCheck();
 		//draw();
 		if(ssd_ == 1)
 		{
@@ -252,12 +252,10 @@ void HighscoreEntering()
 	MainGame.addObject(&rO);
 
 	ssd1306_Fill(Black);
-	char char1;
-	char char2;
-	char char3;
+
 	while(highscores == 1)
 	{
-		//ManualCheck();
+		ManualCheck();
 		MainGame.clearssd1306();
 
 		if(statebutton3 == false)
@@ -265,7 +263,7 @@ void HighscoreEntering()
 		    sprt++;
 		    if(sprt > 42) sprt = 7;
 
-		    bool t = MainGame.changeSpriteNr(a,sprt);
+		    //bool t = MainGame.changeSpriteNr(a,sprt);
 		}
 		if(statebutton2 == false)
 		{

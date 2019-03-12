@@ -8,8 +8,6 @@ extern "C"
 #endif
 
 
-char getCharbySpritenr(int j);
-
 Game::Game(uint16_t x, uint16_t y)
 {
 	this->resolution_X = x;
