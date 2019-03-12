@@ -31,7 +31,8 @@ public:
 	int getObjX(uint8_t uninr);
 	int getObjY(uint8_t uninr);
 
-	char Game::getCharbySpritenr(int j);
+	char getCharbySpritenr(int j);
+	int getSpriteNrByString(char j);
 
 private:
 	Object * First = nullptr;

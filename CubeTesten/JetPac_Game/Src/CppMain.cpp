@@ -14,6 +14,7 @@
 #include "Object.h"
 #include <stdint.h>
 #include "ExtraFunctions.h"
+#include <vector>
 
 //declare global variables
 Game MainGame = Game(640,420);
@@ -72,27 +73,20 @@ void cppmaintask_1(void *pvParameters)
 
 void cppmaintask_2(void *pvParameters)
 {
-	for(;;)
+	statebutton1 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_3);
+	statebutton2 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_4);
+	statebutton3 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_5);
+	if(debug ==1 && ssd_ == 1)
 	{
-		statebutton1 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_3);
-		statebutton2 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_4);
-		statebutton3 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_5);
-
-		if(debug ==1 && ssd_ == 1)
-		{
-			ssd1306_SetCursor(50,0);
-			if(statebutton1 == true) ssd1306_WriteString("1", Font_7x10, White);
-			if(statebutton1 == false) ssd1306_WriteString("0", Font_7x10, White);
-
-			ssd1306_SetCursor(50,10);
-			if(statebutton2 == true) ssd1306_WriteString("1", Font_7x10, White);
-			if(statebutton2 == false) ssd1306_WriteString("0", Font_7x10, White);
-
-			ssd1306_SetCursor(50,20);
-			if(statebutton3 == true) ssd1306_WriteString("1", Font_7x10, White);
-			if(statebutton3 == false) ssd1306_WriteString("0", Font_7x10, White);
-		}
-
+		ssd1306_SetCursor(50,0);
+		if(statebutton1 == true) ssd1306_WriteString("1", Font_7x10, White);
+		if(statebutton1 == false) ssd1306_WriteString("0", Font_7x10, White);
+		ssd1306_SetCursor(50,10);
+		if(statebutton2 == true) ssd1306_WriteString("1", Font_7x10, White);
+		if(statebutton2 == false) ssd1306_WriteString("0", Font_7x10, White);
+		ssd1306_SetCursor(50,20);
+		if(statebutton3 == true) ssd1306_WriteString("1", Font_7x10, White);
+		if(statebutton3 == false) ssd1306_WriteString("0", Font_7x10, White);
 	}
 }
 
@@ -172,7 +166,7 @@ void Mainscreen()
 
 	while(mainscreen == 1)
 	{
-		ManualCheck();
+		//ManualCheck();
 		//draw();
 		if(ssd_ == 1)
 		{
@@ -263,7 +257,7 @@ void HighscoreEntering()
 	char char3;
 	while(highscores == 1)
 	{
-		ManualCheck();
+		//ManualCheck();
 		MainGame.clearssd1306();
 
 		if(statebutton3 == false)
@@ -275,21 +269,21 @@ void HighscoreEntering()
 		}
 		if(statebutton2 == false)
 		{
-			if(char1 == "")char1 = MainGame.getCharbySpritenr(sprt);
-			else if(char2 == "")char2 = MainGame.getCharbySpritenr(sprt);
-			else if(char3 == "")char3 = MainGame.getCharbySpritenr(sprt);
-			else
-			{
-				MainGame.GameState = MainGame.MAINSCREEN;
-				highscores = 0;
-			}
+			///if(char1 == "")char1 = MainGame.getCharbySpritenr(sprt);
+			//else if(char2 == "")char2 = MainGame.getCharbySpritenr(sprt);
+			//else if(char3 == "")char3 = MainGame.getCharbySpritenr(sprt);
+			//else
+			//{
+			//	MainGame.GameState = MainGame.MAINSCREEN;
+			//	highscores = 0;
+			//}
 		}
 
 		MainGame.drawssd1306();
 
 	}
 
-	Highscore temp =
+	//Highscore temp =
 
 }
 
