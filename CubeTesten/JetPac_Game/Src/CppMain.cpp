@@ -36,7 +36,7 @@ void Highscores();
 void Playing();
 void Draw();
 void SendviaSPI(Object obj);
-
+void HighscoreEntering();
 
 
 
@@ -64,6 +64,9 @@ void cppmaintask_1(void *pvParameters)
 				break;
 			case MainGame.PLAYING:
 				Playing();
+				break;
+			case MainGame.ENTERINGHIGHSCORE:
+				HighscoreEntering();
 				break;
 			default:
 				break;
@@ -263,7 +266,7 @@ void HighscoreEntering()
 		    sprt++;
 		    if(sprt > 42) sprt = 7;
 
-		    //bool t = MainGame.changeSpriteNr(a,sprt);
+		    bool t = MainGame.changeSpriteNr(a,sprt);
 		}
 		if(statebutton2 == false)
 		{
@@ -386,7 +389,7 @@ void Playing()
 		    }
 		    if(statebutton3 == false)
 		    {
-		    	MainGame.GameState = MainGame.HIGHSCORES;
+		    	MainGame.GameState = MainGame.ENTERINGHIGHSCORE;
 		    	playing = 0;
 		    }
 

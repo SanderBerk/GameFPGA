@@ -170,18 +170,14 @@ int Game::checkColl(uint8_t uninr, uint8_t line1, uint8_t line2, uint8_t line3, 
 		temp = temp->Next;
 	}
 
-	if(pacman != nullptr && line11 != nullptr && line21 != nullptr && line31 != nullptr && line41 != nullptr)
+	if(pacman != nullptr && line11 != nullptr)
 	{
 		if((pacman->LposY - pacman->Radius) - (line11->LposY + line11->Radius) > -4 && (pacman->LposY - pacman->Radius) - (line11->LposY + line11->Radius) < 0)
 		{
 			return 1;
 		}
 	}
-	else
-	{
-		return -1;
-	}
-
+	return -1;
 
 }
 

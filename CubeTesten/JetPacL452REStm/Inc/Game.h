@@ -15,7 +15,7 @@ public:
 	Sprite getSprite(uint8_t);
 	Highscore getHighScore(int);
 	void SetHighScore(Highscore);
-	enum States { INIT, MAINSCREEN, HIGHSCORES, SETTINGS, PLAYING };
+	enum States { INIT, MAINSCREEN, HIGHSCORES, SETTINGS, PLAYING, ENTERINGHIGHSCORE };
 	States GameState;
 
 	void removeObjectUni(uint8_t UniqueNr);

@@ -36,7 +36,7 @@ void Highscores();
 void Playing();
 void Draw();
 void SendviaSPI(Object obj);
-
+void HighscoreEntering();
 
 
 
@@ -64,6 +64,9 @@ void cppmaintask_1(void *pvParameters)
 				break;
 			case MainGame.PLAYING:
 				Playing();
+				break;
+			case MainGame.ENTERINGHIGHSCORE:
+				HighscoreEntering();
 				break;
 			default:
 				break;
@@ -303,106 +306,108 @@ void Highscores()
 void Playing()
 {
 	int playing = 1;
-	MainGame.clearObjects();
-	Object pacmanobj = Object(0,0,1,5,5);
-	int pacman = MainGame.addObject(&pacmanobj);
+		MainGame.clearObjects();
+		Object pacmanobj = Object(0,0,1,5,5);
+		int pacman = MainGame.addObject(&pacmanobj);
 
-	Object lineobj = Object(30,0,1,2,2);
-	int line = MainGame.addObject(&lineobj);
+		Object lineobj = Object(30,0,1,2,2);
+		int line = MainGame.addObject(&lineobj);
 
-	Object lineobj1 = Object(40,2,1,2,2);
-	int line1 = MainGame.addObject(&lineobj1);
+		Object lineobj1 = Object(40,2,1,2,2);
+		int line1 = MainGame.addObject(&lineobj1);
 
-	Object lineobj2 = Object(40,4,1,2,2);
-	int line2 = MainGame.addObject(&lineobj2);
+		Object lineobj2 = Object(40,4,1,2,2);
+		int line2 = MainGame.addObject(&lineobj2);
 
-	Object lineobj3 = Object(40,6,1,2,2);
-	int line3 = MainGame.addObject(&lineobj3);
-	ssd1306_Fill(Black);
-	int y = 40;
-	int x= 0;
-	int speed = 5;
-	int up = 1;
-	int orginal = 43;
-	x = orginal;
-	while(playing == 1)
-	{
-			ManualCheck();
-		    if((x - orginal) > 18 && up == 1) speed = 4;
-		    if((x - orginal) > 25 && up == 1) speed = 3;
-		    if((x - orginal) > 35 && up == 1) speed = 2;
-		    if((x - orginal) > 45 && up == 1) speed = 1;
-		    if((x - orginal) > 50)
-		    {
-		    	up = 0;
-		    	speed =6;
-		    }
-		    if((x - orginal) > 50 && up == 0) speed = -1;
-		    if((x - orginal) < 45 && up == 0) speed = -2;
-		    if((x - orginal) < 42 && up == 0) speed = -3;
-		    if((x - orginal) < 35 && up == 0) speed = -4;
-		    if((x - orginal) < 25 && up == 0) speed = -6;
-
-		    if(speed >0)
-		    {
-		    	for(int i = 0;i<speed;i++)
-		    	{
-		    		x++;
-		    	}
-
-			    if(MainGame.checkColl(pacman,line,line1,line2,line3) == 1)
+		Object lineobj3 = Object(40,6,1,2,2);
+		int line3 = MainGame.addObject(&lineobj3);
+		ssd1306_Fill(Black);
+		int y = 40;
+		int x= 0;
+		int speed = 5;
+		int up = 1;
+		int orginal = 43;
+		x = orginal;
+		while(playing == 1)
+		{
+				ManualCheck();
+			    if((x - orginal) > 18 && up == 1) speed = 4;
+			    if((x - orginal) > 25 && up == 1) speed = 3;
+			    if((x - orginal) > 35 && up == 1) speed = 2;
+			    if((x - orginal) > 45 && up == 1) speed = 1;
+			    if((x - orginal) > 50)
 			    {
-			    	orginal = MainGame.getObjX(line);
+			    	up = 0;
+			    	speed =6;
 			    }
-			    if(x < orginal)
+			    if((x - orginal) > 50 && up == 0) speed = -1;
+			    if((x - orginal) < 45 && up == 0) speed = -2;
+			    if((x - orginal) < 42 && up == 0) speed = -3;
+			    if((x - orginal) < 35 && up == 0) speed = -4;
+			    if((x - orginal) < 25 && up == 0) speed = -6;
+
+			    if(speed >0)
 			    {
-			    	up = 1;
-			    	speed = 6;
-			    }
-		    }
-		    else if(speed <0)
-		    {
-		    	int speed2 = speed * -1;
-		    	for(int i = 0;i<speed2;i++)
-		    	{
-		    		x--;
+			    	for(int i = 0;i<speed;i++)
+			    	{
+			    		x++;
+					    if(MainGame.checkColl(pacman,line,line1,line2,line3) == 1)
+					    {
+					    	orginal = MainGame.getObjX(line);
+					    }
+			    	}
 
-		    	}
-			    if(MainGame.checkColl(pacman,line,line1,line2,line3) == 1)
+
+				    if(x < orginal)
+				    {
+				    	up = 1;
+				    	speed = 6;
+				    }
+			    }
+			    else if(speed <0)
 			    {
-			    	orginal = MainGame.getObjX(line);
+			    	int speed2 = speed * -1;
+			    	for(int i = 0;i<speed2;i++)
+			    	{
+			    		x--;
+					    if(MainGame.checkColl(pacman,line,line1,line2,line3) == 1)
+					    {
+					    	orginal = MainGame.getObjX(line);
+					    }
+
+			    	}
+
+
+				    if(x < orginal)
+				    {
+				    	up = 1;
+				    	speed = 6;
+				    }
 			    }
 
-			    if(x < orginal)
+			    if(statebutton1 == false)
 			    {
-			    	up = 1;
-			    	speed = 6;
+			    	if(y < 120)y++;
+
 			    }
-		    }
+			    if(statebutton2 == false)
+			    {
+			    	if(y > 0)y--;
+			    }
+			    if(statebutton3 == false)
+			    {
+			    	MainGame.GameState = MainGame.ENTERINGHIGHSCORE;
+			    	playing = 0;
+			    }
 
-		    if(statebutton1 == false)
-		    {
-		    	if(y < 120)y++;
-
-		    }
-		    if(statebutton2 == false)
-		    {
-		    	if(y > 0)y--;
-		    }
-		    if(statebutton3 == false)
-		    {
-		    	MainGame.GameState = MainGame.HIGHSCORES;
-		    	playing = 0;
-		    }
-
-		    MainGame.clearssd1306();
-		    MainGame.ChangePosObjbyUniNr(line,y,0);
-		    MainGame.ChangePosObjbyUniNr(pacman,x,0);
-		    MainGame.drawssd1306();
+			    MainGame.clearssd1306();
+			    MainGame.ChangePosObjbyUniNr(line,y,0);
+			    MainGame.ChangePosObjbyUniNr(pacman,x,0);
+			    MainGame.drawssd1306();
 
 
 
-	}
+		}
 }
 
 void Settings()
