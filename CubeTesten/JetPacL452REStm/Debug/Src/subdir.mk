@@ -19,7 +19,8 @@ CPP_SRCS += \
 ../Src/Game.cpp \
 ../Src/Highscore.cpp \
 ../Src/Object.cpp \
-../Src/Sprite.cpp 
+../Src/Sprite.cpp \
+../Src/pdata.cpp 
 
 OBJS += \
 ./Src/CppMain.o \
@@ -31,6 +32,7 @@ OBJS += \
 ./Src/fonts.o \
 ./Src/freertos.o \
 ./Src/main.o \
+./Src/pdata.o \
 ./Src/ssd1306.o \
 ./Src/stm32l4xx_hal_msp.o \
 ./Src/stm32l4xx_hal_timebase_TIM.o \
@@ -53,7 +55,8 @@ CPP_DEPS += \
 ./Src/Game.d \
 ./Src/Highscore.d \
 ./Src/Object.d \
-./Src/Sprite.d 
+./Src/Sprite.d \
+./Src/pdata.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -61,7 +64,7 @@ Src/%.o: ../Src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU G++ Compiler'
 	@echo $(PWD)
-	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L452xx -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L452xx -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fno-exceptions -fno-rtti -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
@@ -69,7 +72,7 @@ Src/%.o: ../Src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: MCU GCC Compiler'
 	@echo $(PWD)
-	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L452xx -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L452xx -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS" -I"C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

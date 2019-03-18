@@ -16,10 +16,10 @@ public:
 	States GameState;
 
 	void removeObjectUni(uint8_t UniqueNr);
-	uint8_t addObject(Object * obj);
+	int addObject(Object * obj);
 	int ChangePosObjbyUniNr(uint8_t uninr, uint16_t x, uint16_t y);
 	bool changeSpriteNr(int, int); // Dangerous!!!!
-	//void showall();
+	void showall();
 	void clearObjects();
 	void draw();
 	//void drawssd1306();

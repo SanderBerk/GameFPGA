@@ -34,12 +34,12 @@ void Object::changeLposY(uint16_t y)
 	this->LposY = y;
 }
 
-uint16_t Object::getLposY()
+int Object::getLposY()
 {
 	return this->LposY;
 }
 
-uint16_t Object::getLposX()
+int Object::getLposX()
 {
 	return this->LposX;
 }

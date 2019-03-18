@@ -37,7 +37,7 @@ void Game::SetHighScore(Highscore h)
 	this->Highscores[5] = h;
 }
 
-uint8_t Game::addObject(Object * obj)
+int Game::addObject(Object * obj)
 {
 	if (First == nullptr && Last == nullptr)
 	{
@@ -87,10 +87,12 @@ void Game::removeObjectUni(uint8_t UniqueNr)
 				First = First->Next;
 				First->Prev = nullptr;
 			}
+			delete temp;
 
 		}
 		temp = temp->Next;
 	}
+	delete temp;
 }
 
 bool Game::changeSpriteNr(int Uninr,int sprtnr)
@@ -196,7 +198,13 @@ void Game::showall()
 
 void Game::draw()
 {
-
+	Object * temp = First;
+	PData Com = PData();
+	while (temp != nullptr)
+	{
+		Com.sendLoc(temp);
+		temp = temp->Next;
+	}
 }
 
 void Game::drawssd1306()
@@ -225,6 +233,7 @@ void Game::drawssd1306()
 		}
 		temp = temp->Next;
 	}
+	delete temp;
 
 }
 
@@ -244,10 +253,15 @@ void Game::clearssd1306()
 		}
 		temp = temp->Next;
 	}
+	delete temp;
 }
 
 void Game::clearObjects()
 {
+	for (int i = 0; i < 255; i++)
+	{
+		removeObjectUni(i);
+	}
 	First = nullptr;
 	Last = nullptr;
 	amountCurrentSprites = 0;

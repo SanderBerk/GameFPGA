@@ -15,6 +15,7 @@
 #include <stdint.h>
 #include "ExtraFunctions.h"
 #include <vector>
+#include "pdata.h"
 
 //declare global variables
 Game MainGame = Game(640,420);
@@ -23,6 +24,7 @@ bool statebutton2 = 0;
 bool statebutton3 = 0;
 bool debug = false;
 bool ssd_ = true;
+PData Com = PData();
 
 
 
@@ -34,8 +36,6 @@ void Settings();
 void Mainscreen();
 void Highscores();
 void Playing();
-void Draw();
-void SendviaSPI(Object obj);
 void HighscoreEntering();
 
 
@@ -419,10 +419,6 @@ void Settings()
 	}
 }
 
-void SendviaSPI(Object obj)
-{
-
-}
 
 
 

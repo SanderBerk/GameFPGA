@@ -18,8 +18,8 @@ public:
 	virtual ~Object();
 	void changeLposX(uint16_t);
 	void changeLposY(uint16_t);
-	uint16_t getLposX();
-	uint16_t getLposY();
+	int getLposX();
+	int getLposY();
 	uint8_t getSpritenr();
 
 
@@ -38,8 +38,8 @@ private:
 	int spritenr : 7;
 	int Xlength : 5;//X length
 	int Ylength : 5;//Y length
-	int LposX : 10;
-	int LposY : 9;
+	int LposX;
+	int LposY;
 	int Radius : 5;
 
 	friend class Game;
