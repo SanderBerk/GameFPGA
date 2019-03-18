@@ -1,8 +1,6 @@
 #include "pch.h"
 #include "Game.h"
 
-char getCharbySpritenr(int j);
-
 Game::Game(uint16_t x, uint16_t y)
 {
 	this->resolution_X = x;
@@ -32,7 +30,7 @@ void Game::SetHighScore(Highscore h)
 	this->Highscores[5] = h;
 }
 
-uint8_t Game::addObject(Object * obj)
+int Game::addObject(Object * obj)
 {
 	if (First == nullptr && Last == nullptr)
 	{
@@ -71,7 +69,6 @@ void Game::removeObjectUni(uint8_t UniqueNr)
 			else
 			{
 				Last = Last->Prev;
-				Last->Next = nullptr;
 			}
 			if (temp->Prev != nullptr)
 			{
@@ -80,12 +77,12 @@ void Game::removeObjectUni(uint8_t UniqueNr)
 			else
 			{
 				First = First->Next;
-				First->Prev = nullptr;
 			}
 
 		}
 		temp = temp->Next;
 	}
+	delete temp;
 }
 
 bool Game::changeSpriteNr(int Uninr, int sprtnr)
@@ -150,11 +147,11 @@ int Game::getObjY(uint8_t uninr)
 int Game::checkColl(uint8_t uninr, uint8_t line1, uint8_t line2, uint8_t line3, uint8_t line4)
 {
 	Object * temp = First;
-	Object * pacman;
-	Object * line11;
-	Object * line21;
-	Object * line31;
-	Object * line41;
+	Object * pacman = nullptr;
+	Object * line11 = nullptr;
+	Object * line21 = nullptr;
+	Object * line31 = nullptr;
+	Object * line41 = nullptr;
 	while (temp != nullptr)
 	{
 		if (temp->UniqueIDWhenactive == uninr)pacman = temp;
@@ -176,11 +173,12 @@ int Game::checkColl(uint8_t uninr, uint8_t line1, uint8_t line2, uint8_t line3, 
 	{
 		return -1;
 	}
+	return -1;
 
 
 }
 
-/*
+
 void Game::showall()
 {
 	Object * temp = First;
@@ -190,18 +188,22 @@ void Game::showall()
 		temp = temp->Next;
 	}
 }
-*/
+
 
 
 void Game::draw()
 {
-
+	
 }
 
 
 
 void Game::clearObjects()
 {
+	for (int i = 0; i < 255; i++)
+	{
+		removeObjectUni(i);
+	}
 	First = nullptr;
 	Last = nullptr;
 	amountCurrentSprites = 0;
