@@ -1,0 +1,106 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 17488
+License: Customer
+
+Current time: 	Mon Mar 18 10:55:55 CET 2019
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 220 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	sande
+User home directory: C:/Users/sande
+User working directory: C:/VivadoProjects/project_blok7/project
+User country: 	NL
+User language: 	nl
+User locale: 	nl_NL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/sande/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/sande/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/sande/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/VivadoProjects/project_blok7/project/vivado.log
+Vivado journal file location: 	C:/VivadoProjects/project_blok7/project/vivado.jou
+Engine tmp dir: 	C:/VivadoProjects/project_blok7/project/.Xil/Vivado-17488-Sander-Laptop
+
+GUI allocated memory:	192 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 511 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 54 MB (+53939kb) [00:00:09]
+// [Engine Memory]: 474 MB (+345295kb) [00:00:09]
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\VivadoProjects\project_blok7\project\project.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/VivadoProjects/project_blok7/project/project.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/VivadoProjects/project_blok7/project/project.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 528 MB (+31586kb) [00:00:14]
+// [GUI Memory]: 64 MB (+7835kb) [00:00:14]
+// [GUI Memory]: 78 MB (+11159kb) [00:00:17]
+// [Engine Memory]: 578 MB (+24778kb) [00:00:17]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 594 MB. GUI used memory: 42 MB. Current time: 3/18/19 10:56:03 AM CET
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 783.629 ; gain = 72.906 
+// Project name: project; location: C:/VivadoProjects/project_blok7/project; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (spi_slave.vhd) elapsed time: 0.3s
+// Elapsed time: 250 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spi_slave(logic) (spi_slave.vhd)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, spi_slave(logic) (spi_slave.vhd)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [Engine Memory]: 609 MB (+2244kb) [00:04:31]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(Behavioral) (TOP.vhd)]", 1, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(Behavioral) (TOP.vhd)]", 1, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(Behavioral) (TOP.vhd), sync : Synchronis(Behavioral) (Synchronis.vhd)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(Behavioral) (TOP.vhd), sync : Synchronis(Behavioral) (Synchronis.vhd)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(Behavioral) (TOP.vhd), drec : DataReceving(Behavioral) (DataReceving.vhd)]", 3, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP(Behavioral) (TOP.vhd), drec : DataReceving(Behavioral) (DataReceving.vhd)]", 3, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [GUI Memory]: 84 MB (+1922kb) [00:04:44]
+selectCodeEditor("DataReceving.vhd", 111, 258); // cd (w, cj)
+selectCodeEditor("DataReceving.vhd", 134, 296); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 45 MB. Current time: 3/18/19 11:00:33 AM CET
+selectCodeEditor("DataReceving.vhd", 116, 285); // cd (w, cj)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.

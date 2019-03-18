@@ -1,0 +1,48 @@
+/*
+ * Object.h
+ *
+ *  Created on: Feb 22, 2019
+ *      Author: Rinke
+ */
+
+#include <stdint.h>
+
+#ifndef OBJECT_H_
+#define OBJECT_H_
+
+class Object
+{
+public:
+	Object(int xpos, int ypos, int nr, int Xlen, int Ylen);
+	virtual ~Object();
+	void changeLposX(uint16_t);
+	void changeLposY(uint16_t);
+	uint16_t getLposX();
+	uint16_t getLposY();
+	uint8_t getSpritenr();
+
+
+	void setSpritenr(uint8_t j);
+	uint16_t getMiddleX();
+	uint16_t getMiddleY();
+	void setNext(Object *);
+	Object * getNext();
+	void setPrev(Object *);
+	Object * getPrev();
+
+private:
+	int UniqueIDWhenactive : 6;
+	Object * Next = nullptr;
+	Object * Prev = nullptr;
+	int spritenr : 7;
+	int Xlength : 5;//X length
+	int Ylength : 5;//Y length
+	uint16_t LposX;
+	uint16_t LposY;
+	int Radius : 5;
+
+};
+
+
+
+#endif /* OBJECT_H_ */

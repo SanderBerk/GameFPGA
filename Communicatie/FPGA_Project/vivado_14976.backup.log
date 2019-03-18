@@ -1,0 +1,505 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar 15 13:57:47 2019
+# Process ID: 14976
+# Current directory: C:/VivadoProjects/project_blok7/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3440 C:\VivadoProjects\project_blok7\project\project.xpr
+# Log file: C:/VivadoProjects/project_blok7/project/vivado.log
+# Journal file: C:/VivadoProjects/project_blok7/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/VivadoProjects/project_blok7/project/project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 728.953 ; gain = 58.309
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Synchronis
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 827.391 ; gain = 74.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Synchronis' [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/Synchronis.vhd:23]
+WARNING: [Synth 8-2897] clock signal used as data [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/Synchronis.vhd:29]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/Synchronis.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'Synchronis' (1#1) [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/Synchronis.vhd:23]
+WARNING: [Synth 8-3331] design Synchronis has unconnected port clk_sys
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 867.547 ; gain = 114.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 867.547 ; gain = 114.461
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'data_out[0]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[1]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[2]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[3]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[4]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[5]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[6]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[7]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[0]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[1]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[2]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[3]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[4]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[5]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[6]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[7]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[0]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sys_clk'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[0]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[1]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[2]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[3]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[4]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[5]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[6]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[7]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[1]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[2]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[3]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[4]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[5]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[6]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_in[7]'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1233.512 ; gain = 480.426
+6 Infos, 37 Warnings, 34 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1233.512 ; gain = 480.426
+export_ip_user_files -of_objects  [get_files C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Fri Mar 15 14:01:37 2019] Launched synth_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Fri Mar 15 14:02:48 2019] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/impl_1/runme.log
+set_property top TOP [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1269.137 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/TOP.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (1#1) [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/TOP.vhd:21]
+WARNING: [Synth 8-3330] design TOP has an empty top module
+WARNING: [Synth 8-3331] design TOP has unconnected port sys_clk
+WARNING: [Synth 8-3331] design TOP has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1285.359 ; gain = 16.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1285.359 ; gain = 16.223
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 8 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1285.359 ; gain = 16.223
+place_ports clk K17
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {data_in[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {data_in[1]} {data_in[2]} {data_in[3]} {data_in[4]} {data_in[5]} {data_in[6]} {data_in[7]} {data_out[0]} {data_out[1]} {data_out[2]} {data_out[3]}]]
+set_property drive 4 [get_ports [list {data_out[0]} {data_out[1]} {data_out[2]} {data_out[3]}]]
+set_property slew SLOW [get_ports [list {data_out[0]} {data_out[1]} {data_out[2]} {data_out[3]}]]
+set_property iostandard LVCMOS33 [get_ports [list {data_out[4]} {data_out[5]} {data_out[6]} {data_out[7]} sys_clk]]
+set_property drive 4 [get_ports [list {data_out[4]} {data_out[5]} {data_out[6]} {data_out[7]}]]
+set_property slew SLOW [get_ports [list {data_out[4]} {data_out[5]} {data_out[6]} {data_out[7]}]]
+place_ports {data_in[0]} A14
+place_ports {data_in[1]} A15
+place_ports {data_in[2]} A16
+place_ports {data_in[3]} A17
+place_ports {data_in[4]} B15
+place_ports {data_in[5]} C15
+place_ports {data_in[6]} B16
+place_ports {data_in[7]} C16
+place_ports {data_out[7]} L1
+place_ports {data_out[6]} P1
+place_ports {data_out[5]} N3
+place_ports {data_out[4]} P3
+place_ports {data_out[3]} U3
+place_ports {data_out[2]} W3
+place_ports {data_out[1]} V3
+place_ports {data_out[0]} V13
+place_ports sys_clk W5
+close [ open C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc w ]
+add_files -fileset constrs_1 C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc
+set_property target_constrs_file C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 15 14:07:31 2019] Launched synth_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/synth_1/runme.log
+[Fri Mar 15 14:07:32 2019] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A37936A
+set_property PROGRAM.FILE {C:/VivadoProjects/project_blok7/project/project.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/VivadoProjects/project_blok7/project/project.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1961.871 ; gain = 45.258
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/TOP.vhd:13]
+WARNING: [Synth 8-3848] Net testing in module/entity TOP does not have driver. [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/TOP.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (1#1) [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/TOP.vhd:13]
+WARNING: [Synth 8-3330] design TOP has an empty top module
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[7]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[6]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[5]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[4]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[3]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[2]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[1]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[0]
+WARNING: [Synth 8-3331] design TOP has unconnected port sys_clk
+WARNING: [Synth 8-3331] design TOP has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1991.773 ; gain = 75.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1991.773 ; gain = 75.160
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 8 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2004.172 ; gain = 87.559
+set_property iostandard LVCMOS33 [get_ports [list {testing[7]} {testing[5]} {testing[2]} {testing[3]} {testing[6]} {testing[0]} {testing[4]} {testing[1]}]]
+set_property drive 4 [get_ports [list {testing[7]} {testing[5]} {testing[2]} {testing[3]} {testing[6]} {testing[0]} {testing[4]} {testing[1]}]]
+place_ports {testing[0]} U16
+place_ports {testing[1]} E19
+place_ports {testing[2]} U19
+place_ports {testing[3]} V19
+place_ports {testing[4]} W18
+place_ports {testing[5]} U15
+place_ports {testing[6]} U14
+place_ports {testing[7]} V14
+save_constraints
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 15 14:57:07 2019] Launched synth_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/synth_1/runme.log
+[Fri Mar 15 14:57:07 2019] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2004.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/TOP.vhd:13]
+INFO: [Synth 8-3491] module 'Synchronis' declared at 'C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/Synchronis.vhd:4' bound to instance 'sync' of component 'Synchronis' [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/TOP.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'Synchronis' [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/Synchronis.vhd:14]
+WARNING: [Synth 8-2897] clock signal used as data [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/Synchronis.vhd:20]
+WARNING: [Synth 8-614] signal 'clk' is read in the process but is not in the sensitivity list [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/Synchronis.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Synchronis' (1#1) [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/Synchronis.vhd:14]
+WARNING: [Synth 8-3848] Net testing in module/entity TOP does not have driver. [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/TOP.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (2#1) [C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/TOP.vhd:13]
+WARNING: [Synth 8-3331] design Synchronis has unconnected port sys_clk
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[7]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[6]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[5]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[4]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[3]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[2]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[1]
+WARNING: [Synth 8-3331] design TOP has unconnected port testing[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2022.035 ; gain = 17.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2022.035 ; gain = 17.863
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2034.242 ; gain = 30.070
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_in]]
+place_ports clk_in K17
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 15 14:59:47 2019] Launched synth_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/synth_1/runme.log
+[Fri Mar 15 14:59:47 2019] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/impl_1/runme.log
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/VivadoProjects/project_blok7/project/project.srcs/constrs_1/new/constraint.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_in]]
+place_ports clk_in K17
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 15 15:01:49 2019] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 15 15:03:33 2019] Launched synth_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/synth_1/runme.log
+[Fri Mar 15 15:03:33 2019] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/VivadoProjects/project_blok7/project/project.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/VivadoProjects/project_blok7/project/project.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close [ open C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/DataReceving.vhd w ]
+add_files C:/VivadoProjects/project_blok7/project/project.srcs/sources_1/new/DataReceving.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 15 15:24:31 2019] Launched synth_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/synth_1/runme.log
+[Fri Mar 15 15:24:31 2019] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/VivadoProjects/project_blok7/project/project.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 15 15:39:09 2019] Launched synth_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/synth_1/runme.log
+[Fri Mar 15 15:39:09 2019] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Fri Mar 15 15:39:27 2019] Launched synth_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/synth_1/runme.log
+[Fri Mar 15 15:39:27 2019] Launched impl_1...
+Run output will be captured here: C:/VivadoProjects/project_blok7/project/project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/VivadoProjects/project_blok7/project/project.runs/impl_1/TOP.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A37936A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 16 15:29:08 2019...
