@@ -3,28 +3,31 @@
 #include "Sprite.h"
 #include <stdint.h>
 #include "Highscore.h"
+#include <iostream>
+#include <vector>
+#include <Windows.h>
 
 class Game
 {
 public:
-	Game(uint16_t, uint16_t);
-	virtual ~Game();
-	Sprite getSprite(uint8_t);
-	Highscore getHighScore(int);
-	void SetHighScore(Highscore);
+	Game(uint16_t, uint16_t);		//constructor
+	virtual ~Game();				//deconstructor
+	Sprite getSprite(uint8_t);		//spritenr opvragen
+	Highscore getHighScore(int);	//get highscore
+	void SetHighScore(Highscore);	//highscore
 	enum States { INIT, MAINSCREEN, HIGHSCORES, SETTINGS, PLAYING };
-	States GameState;
+	States GameState;				//enum
 
-	void removeObjectUni(uint8_t UniqueNr);
-	int addObject(Object * obj);
-	int ChangePosObjbyUniNr(uint8_t uninr, uint16_t x, uint16_t y);
+	void removeObjectUni(uint8_t UniqueNr); //remove from linked list
+	uint8_t addObject(Object * obj);		//object meegeven
+	int ChangePosObjbyUniNr(uint8_t uninr, uint16_t x, uint16_t y); //update object
 	bool changeSpriteNr(int, int); // Dangerous!!!!
 	void showall();
 	void clearObjects();
 	void draw();
 	//void drawssd1306();
 	//void clearssd1306();
-	int checkColl(uint8_t uninr, uint8_t line1, uint8_t line2, uint8_t line3, uint8_t line4);
+	//int checkColl(uint8_t uninr, uint8_t line1, uint8_t line2, uint8_t line3, uint8_t line4);
 	int getObjX(uint8_t uninr);
 	int getObjY(uint8_t uninr);
 

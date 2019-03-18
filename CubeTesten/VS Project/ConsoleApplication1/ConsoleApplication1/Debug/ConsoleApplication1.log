@@ -1,4 +1,6 @@
 ﻿  ConsoleApplication1.cpp
   Game.cpp
+c:\users\super\onedrive\documenten\gamefpga\cubetesten\vs project\consoleapplication1\consoleapplication1\game.cpp(45): warning C4244: 'return': conversion from 'uint16_t' to 'uint8_t', possible loss of data
+c:\users\super\onedrive\documenten\gamefpga\cubetesten\vs project\consoleapplication1\consoleapplication1\game.cpp(54): warning C4244: 'return': conversion from 'uint16_t' to 'uint8_t', possible loss of data
   Generating Code...
-  ConsoleApplication1.vcxproj -> C:\Users\Rinke.RINKE-LENOVO\Documents\GitHub\GameFPGA\CubeTesten\VS Project\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\super\OneDrive\Documenten\GameFPGA\CubeTesten\VS Project\ConsoleApplication1\Debug\ConsoleApplication1.exe

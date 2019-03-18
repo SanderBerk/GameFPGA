@@ -1,11 +1,12 @@
 #include "pch.h"
 #include "Game.h"
 
+//char getCharbySpritenr(int j);
+
 Game::Game(uint16_t x, uint16_t y)
 {
 	this->resolution_X = x;
 	this->resolution_Y = y;
-
 }
 
 
@@ -30,7 +31,7 @@ void Game::SetHighScore(Highscore h)
 	this->Highscores[5] = h;
 }
 
-int Game::addObject(Object * obj)
+uint8_t Game::addObject(Object * obj)
 {
 	if (First == nullptr && Last == nullptr)
 	{
@@ -69,6 +70,7 @@ void Game::removeObjectUni(uint8_t UniqueNr)
 			else
 			{
 				Last = Last->Prev;
+				Last->Next = nullptr;
 			}
 			if (temp->Prev != nullptr)
 			{
@@ -77,12 +79,12 @@ void Game::removeObjectUni(uint8_t UniqueNr)
 			else
 			{
 				First = First->Next;
+				First->Prev = nullptr;
 			}
 
 		}
 		temp = temp->Next;
 	}
-	delete temp;
 }
 
 bool Game::changeSpriteNr(int Uninr, int sprtnr)
@@ -144,40 +146,6 @@ int Game::getObjY(uint8_t uninr)
 }
 
 
-int Game::checkColl(uint8_t uninr, uint8_t line1, uint8_t line2, uint8_t line3, uint8_t line4)
-{
-	Object * temp = First;
-	Object * pacman = nullptr;
-	Object * line11 = nullptr;
-	Object * line21 = nullptr;
-	Object * line31 = nullptr;
-	Object * line41 = nullptr;
-	while (temp != nullptr)
-	{
-		if (temp->UniqueIDWhenactive == uninr)pacman = temp;
-		if (temp->UniqueIDWhenactive == line1)line11 = temp;
-		if (temp->UniqueIDWhenactive == line2)line21 = temp;
-		if (temp->UniqueIDWhenactive == line3)line31 = temp;
-		if (temp->UniqueIDWhenactive == line4)line41 = temp;
-		temp = temp->Next;
-	}
-
-	if (pacman != nullptr && line11 != nullptr && line21 != nullptr && line31 != nullptr && line41 != nullptr)
-	{
-		if ((pacman->LposY - pacman->Radius) - (line11->LposY + line11->Radius) > -4 && (pacman->LposY - pacman->Radius) - (line11->LposY + line11->Radius) < 0)
-		{
-			return 1;
-		}
-	}
-	else
-	{
-		return -1;
-	}
-	return -1;
-
-
-}
-
 
 void Game::showall()
 {
@@ -190,20 +158,15 @@ void Game::showall()
 }
 
 
-
 void Game::draw()
 {
-	
+
 }
 
 
 
 void Game::clearObjects()
 {
-	for (int i = 0; i < 255; i++)
-	{
-		removeObjectUni(i);
-	}
 	First = nullptr;
 	Last = nullptr;
 	amountCurrentSprites = 0;
