@@ -20,9 +20,9 @@ void Init()
 
 void ManualCheck()
 {
-	statebutton1 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_3);
-	statebutton2 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_4);
-	statebutton3 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_5);
+	statebutton1 = HAL_GPIO_ReadPin( GPIOC, button_1_Pin);
+	statebutton2 = HAL_GPIO_ReadPin( GPIOC, button_2_Pin);
+	statebutton3 = HAL_GPIO_ReadPin( GPIOC, button_3_Pin);
 }
 
 void cpptest()

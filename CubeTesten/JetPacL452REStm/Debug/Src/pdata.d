@@ -1,5 +1,7 @@
-Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o: \
- ../Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c \
+Src/pdata.o: ../Src/pdata.cpp \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/pdata.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/Object.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/Sprite.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/stm32l4xx_hal_conf.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/main.h \
@@ -29,7 +31,31 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.o: \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_pwr_ex.h \
  C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h \
- C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/FreeRTOSConfig.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h \
+ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/Object.h
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/pdata.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/Object.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/Sprite.h:
 
 C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
 
@@ -90,3 +116,39 @@ C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm
 C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim.h:
 
 C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_tim_ex.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/FreeRTOSConfig.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/portable.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/portmacro.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
+
+C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc/Object.h:

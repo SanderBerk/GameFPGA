@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc
+HeaderPath=C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Inc
 HeaderFiles=FreeRTOSConfig.h;stm32l4xx_it.h;stm32l4xx_hal_conf.h;main.h;
-SourcePath=C:/Users/Rinke/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Src
+SourcePath=C:/Users/Rinke.RINKE-LENOVO/Documents/GitHub/GameFPGA/CubeTesten/JetPacL452REStm/Src
 SourceFiles=freertos.c;stm32l4xx_it.c;stm32l4xx_hal_msp.c;main.c;stm32l4xx_hal_timebase_TIM.c;
 
 [PreviousLibFiles]

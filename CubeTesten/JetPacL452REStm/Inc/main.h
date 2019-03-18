@@ -59,6 +59,31 @@
 
 /* Private define ------------------------------------------------------------*/
 
+#define pin_4_Pin GPIO_PIN_0
+#define pin_4_GPIO_Port GPIOC
+#define pin_3_Pin GPIO_PIN_1
+#define pin_3_GPIO_Port GPIOC
+#define pin_0_Pin GPIO_PIN_1
+#define pin_0_GPIO_Port GPIOA
+#define pin_1_Pin GPIO_PIN_4
+#define pin_1_GPIO_Port GPIOA
+#define button_1_Pin GPIO_PIN_5
+#define button_1_GPIO_Port GPIOC
+#define pin_7_Pin GPIO_PIN_10
+#define pin_7_GPIO_Port GPIOB
+#define button_2_Pin GPIO_PIN_6
+#define button_2_GPIO_Port GPIOC
+#define button_3_Pin GPIO_PIN_8
+#define button_3_GPIO_Port GPIOC
+#define clk_Pin GPIO_PIN_8
+#define clk_GPIO_Port GPIOA
+#define pin_2_Pin GPIO_PIN_3
+#define pin_2_GPIO_Port GPIOB
+#define pin_6_Pin GPIO_PIN_4
+#define pin_6_GPIO_Port GPIOB
+#define pin_5_Pin GPIO_PIN_5
+#define pin_5_GPIO_Port GPIOB
+
 /* ########################## Assert Selection ############################## */
 /**
   * @brief Uncomment the line below to expanse the "assert_param" macro in the 

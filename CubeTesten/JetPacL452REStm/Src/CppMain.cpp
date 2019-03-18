@@ -78,9 +78,9 @@ void cppmaintask_2(void *pvParameters)
 {
 	for(;;)
 	{
-		statebutton1 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_3);
-		statebutton2 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_4);
-		statebutton3 = HAL_GPIO_ReadPin( GPIOB, GPIO_PIN_5);
+		statebutton1 = HAL_GPIO_ReadPin( GPIOC, button_1_Pin);
+		statebutton2 = HAL_GPIO_ReadPin( GPIOC, button_2_Pin);
+		statebutton3 = HAL_GPIO_ReadPin( GPIOC, button_3_Pin);
 		if(debug ==1 && ssd_ == 1)
 		{
 			ssd1306_SetCursor(50,0);

@@ -16,8 +16,8 @@ PData::PData(){
 
 PData::~PData(){};
 
-void PData::sendLoc(){
-	Object * muur = new Object(604,523,3, 30, 30);
+void PData::sendLoc(Object * obj){
+	Object * muur = obj;
 	uint16_handle_data_send((uint16_t)muur->getSpritenr() | 0xC000);
 	uint16_handle_data_send(muur->getLposX() | 0x4000);
 	uint16_handle_data_send(muur->getLposY() | 0x8000);
