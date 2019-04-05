@@ -1,12 +1,14 @@
+
 #pragma once
 #include <stdint.h>
 #include "Sprite.h"
+
 
 class Object
 {
 public:
 	Object(uint16_t xpos, uint16_t ypos, uint8_t spritenr, uint8_t Xlen, uint8_t Ylen);
-	~Object();
+	virtual ~Object();
 	void changeLposX(uint16_t);
 	void changeLposY(uint16_t);
 	uint16_t getLposX();
@@ -19,17 +21,20 @@ public:
 	void setPrev(Object *);
 	Object * getPrev();
 
-private:
-	uint16_t UniqueIDWhenactive = 0;
+public:
+	uint8_t UniqueIDWhenactive = 0;
 	Object * Next = nullptr;
 	Object * Prev = nullptr;
-	uint16_t spritenr = 0;
+	uint8_t spritenr = 0;
 	uint16_t Xlength = 0;//X length
 	uint16_t Ylength = 0;//Y length
 	uint16_t LposX = 0;
 	uint16_t LposY = 0;
 	uint16_t Radius = 0;
+	uint8_t speed = 0;
+	uint8_t gravity = 0;
 
 	friend class Game;
+	friend class Platform;
 };
 

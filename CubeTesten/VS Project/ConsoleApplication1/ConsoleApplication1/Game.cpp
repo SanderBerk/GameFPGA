@@ -152,7 +152,7 @@ void Game::showall()
 	Object * temp = First;
 	while (temp != nullptr)
 	{
-		std::cout << "X pos: " << temp->LposX << " Y pos: " << temp->LposY << " UniNr: " << temp->UniqueIDWhenactive << " SprNr: " << temp->spritenr << std::endl;
+		std::cout << "X pos: " << temp->LposX << " Y pos: " << temp->LposY << " UniNr: " << temp->UniqueIDWhenactive << " SprNr: " << temp->spritenr << " XPos: " << temp->getLposX() << " YPos: " << temp->getLposY() << " XLen: " << temp->Xlength << " YLen: " << temp->Ylength << std::endl;
 		temp = temp->Next;
 	}
 }

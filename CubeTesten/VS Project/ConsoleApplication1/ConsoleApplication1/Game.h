@@ -1,4 +1,5 @@
 #pragma once
+#include "Platform.h"
 #include "Object.h"
 #include "Sprite.h"
 #include <stdint.h>
