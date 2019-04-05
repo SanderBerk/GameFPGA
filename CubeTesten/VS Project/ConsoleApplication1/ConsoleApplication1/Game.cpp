@@ -38,7 +38,7 @@ uint8_t Game::addObject(Object * obj)
 		Object * temp = obj;
 		First = temp;
 		Last = temp;
-		Last->UniqueIDWhenactive = amountCurrentSprites++;
+		obj->UniqueIDWhenactive = amountCurrentSprites++;
 		Last->Next = nullptr;
 		Last->Prev = nullptr;
 		return Last->UniqueIDWhenactive;
@@ -152,7 +152,7 @@ void Game::showall()
 	Object * temp = First;
 	while (temp != nullptr)
 	{
-		std::cout << "X pos: " << temp->LposX << " Y pos: " << temp->LposY << " UniNr: " << temp->UniqueIDWhenactive << " SprNr: " << temp->spritenr << " XPos: " << temp->getLposX() << " YPos: " << temp->getLposY() << " XLen: " << temp->Xlength << " YLen: " << temp->Ylength << std::endl;
+		std::cout << "X pos: " << temp->LposX << " Y pos: " << temp->LposY << " UniNr: " << temp->UniqueIDWhenactive << " SprNr: " << temp->getSpritenr() << " XPos: " << temp->getLposX() << " YPos: " << temp->getLposY() << " XLen: " << temp->Xlength << " YLen: " << temp->Ylength << std::endl;
 		temp = temp->Next;
 	}
 }

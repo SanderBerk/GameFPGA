@@ -9,6 +9,7 @@ Object::Object(uint16_t xpos, uint16_t ypos, uint8_t nr, uint8_t Xlen, uint8_t Y
 	this->Xlength = Xlen;//X length
 	this->Ylength = Ylen;//Y length
 	this->spritenr = nr;
+	this->UniqueIDWhenactive = 0;
 }
 
 
