@@ -37,7 +37,7 @@ uint16_t Object::getLposX()
 	return this->LposX;
 }
 
-uint8_t Object::getSpritenr()
+uint16_t Object::getSpritenr()
 {
 	return this->spritenr;
 }
